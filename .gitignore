@@ -1,0 +1,5 @@
+.rasa
+.idea
+models/*
+results
+test.py

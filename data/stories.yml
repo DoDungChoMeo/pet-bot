@@ -1,30 +1,51 @@
-version: "3.1"
+version: '3.1'
 
 stories:
+# Nhóm các chức năng tư vấn sản phẩm và đặt hàng
+  - story: Tư vấn sản phẩm
+    steps:
+      - intent: greet
+      - action: utter_welcome
+      - intent: tu_van_san_pham
+      - action: utter_tu_van_san_pham
 
-- story: happy path
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_great
-  - action: utter_happy
+  - story: |
+      Tư vấn sản phẩm 
+      -> Xem danh mục sản phẩm 
+      -> Chọn danh mục sản phẩm
+      -> Xem sản phẩm thuộc danh mục đã chọn
+    steps:
+      - intent: greet
+      - action: utter_welcome
+      - intent: tu_van_san_pham
+      - action: utter_tu_van_san_pham
+      - intent: xem_danh_muc
+      - action: action_categories
+      - intent: chon_danh_muc
+      - action: action_get_products_from_category
 
-- story: sad path 1
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: affirm
-  - action: utter_happy
+  - story: Tư vấn sản phẩm -> Xem danh sách nhãn hiệu
+    steps:
+      - intent: greet
+      - action: utter_welcome
+      - intent: tu_van_san_pham
+      - action: utter_tu_van_san_pham
+      - intent: xem_nhan_hieu
+      - action: action_brands
 
-- story: sad path 2
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: deny
-  - action: utter_goodbye
+  - story: Tư vấn sản phẩm -> Tìm kiếm sản phẩm
+    steps:
+      - intent: greet
+      - action: utter_welcome
+      - intent: tu_van_san_pham
+      - action: utter_tu_van_san_pham
+      - intent: tim_kiem_san_pham
+      - action: action_search
+
+# Nhóm các chức năng tư vấn chăm sóc thú cưng
+  - story: Tư vấn chăm sóc thú cưng
+    steps:
+      - intent: greet
+      - action: utter_welcome
+      - intent: tu_van_cham_soc
+      - action: utter_tu_van_cham_soc

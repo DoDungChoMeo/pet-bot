@@ -1,91 +1,142 @@
-version: "3.1"
+version: '3.1'
 
 nlu:
-- intent: greet
-  examples: |
-    - hey
-    - hello
-    - hi
-    - hello there
-    - good morning
-    - good evening
-    - moin
-    - hey there
-    - let's go
-    - hey dude
-    - goodmorning
-    - goodevening
-    - good afternoon
+  - intent: greet
+    examples: |
+      - hi
+      - hi shop
+      - hello
+      - hello shop
+      - alo
+      - alo shop
+      - chào shop
+      - chào cửa hàng
+      - chào bạn
+      - shop ơi
+      - xin chào
+      - xin chào, có ai không
+      - giúp mình với
+      - tư vấn giúp mình với
+      - chào buổi sáng
+      - mình có vài câu hỏi
+      - bạn ơi cho mình hỏi với
+      - có ai giúp mình không
+      - có ai không
+      - có ai ở đây không?
+      - bạn ơi
+      - anh ơi
+      - chị ơi
+      - cháu ơi
 
-- intent: goodbye
-  examples: |
-    - cu
-    - good by
-    - cee you later
-    - good night
-    - bye
-    - goodbye
-    - have a nice day
-    - see you around
-    - bye bye
-    - see you later
+  - intent: goodbye
+    examples: |
+      - tạm biệt
+      - chào tạm biệt
+      - tạm biệt bạn
+      - tạm biệt em
+      - tạm biệt em nhé
+      - hẹn gặp lại
+      - hẹn gặp lại bạn
+      - chúc một ngày tốt lành
+      - bye-bye
+      - bye
 
-- intent: affirm
-  examples: |
-    - yes
-    - y
-    - indeed
-    - of course
-    - that sounds good
-    - correct
+  - intent: affirm
+    examples: |
+      - được
+      - đúng vậy
+      - dĩ nhiên
+      - ok
 
-- intent: deny
-  examples: |
-    - no
-    - n
-    - never
-    - I don't think so
-    - don't like that
-    - no way
-    - not really
+  - intent: deny
+    examples: |
+      - không
+      - không được
+      - không bao giờ
 
-- intent: mood_great
-  examples: |
-    - perfect
-    - great
-    - amazing
-    - feeling like a king
-    - wonderful
-    - I am feeling very good
-    - I am great
-    - I am amazing
-    - I am going to save the world
-    - super stoked
-    - extremely good
-    - so so perfect
-    - so good
-    - so perfect
+  - intent: bot_challenge
+    examples: |
+      - bạn có phải chatbot
+      - bạn là người hả
+      - bạn là ai vậy
+      - ai đang trả lời vậy
+      - tôi đang nói chuyện với ai vậy
+  
+# hỏi tư vấn sản phẩm
+  - intent: tu_van_san_pham
+    examples: |
+      - tư vấn về các sản phẩm
+      - các sản phẩm đang được bày bán của shop
+      - tui muốn được tư vấn về các sản phẩm đang được bày bán của shop
+      - tôi muốn được tư vấn về các sản phẩm đang được bày bán của shop
+      - mình muốn được tư vấn về các sản phẩm đang được bày bán của shop
 
-- intent: mood_unhappy
-  examples: |
-    - my day was horrible
-    - I am sad
-    - I don't feel very well
-    - I am disappointed
-    - super sad
-    - I'm so sad
-    - sad
-    - very sad
-    - unhappy
-    - not good
-    - not very good
-    - extremly sad
-    - so saad
-    - so sad
+  - intent: xem_danh_muc
+    examples: |
+      - xem danh mục sản phẩm
+      - xem các loại sản phẩm
+      - có bao nhiêu loại sản phẩm
+      - shop có các danh mục sản phẩm nào
+      - cho mình xem danh mục các sản phẩm đang được bày bán
+      - cho tôi xem danh mục các sản phẩm đang được bày bán
+      - cho tui xem danh mục các sản phẩm đang được bày bán
+      
+  - intent: chon_danh_muc
+    examples: |
+      - [đồ dùng cho chó](category)
+      - [do dung cho cho]{"entity": "category", "value": "đồ dùng cho chó"}
+      - [đồ dùng cho mèo](category)
+      - [do dung cho meo]{"entity": "category", "value": "đồ dùng cho mèo"}
+      - [thức ăn cho chó](category)
+      - [thuc an cho cho]{"entity": "category", "value": "thức ăn cho chó"}
+      - [thức ăn cho mèo](category)
+      - [thuc an cho meo]{"entity": "category", "value": "thức ăn cho mèo"}
+      - [bánh thưởng cho chó](category)
+      - [banh thuong cho cho]{"entity": "category", "value": "bánh thưởng cho chó"}
+      - [bánh thưởng cho mèo](category)
+      - [banh thuong cho meo]{"entity": "category", "value": "bánh thưởng cho mèo"}
+      - [pate cho chó](category)
+      - [pate cho cho]{"entity": "category", "value": "pate cho chó"}
+      - [pate cho mèo](category)
+      - [pate cho meo]{"entity": "category", "value": "pate cho mèo"}
+      - [dinh dưỡng cho chó](category)
+      - [dinh duong cho cho]{"entity": "category", "value": "dinh dưỡng cho chó"}
+      - [dinh dưỡng cho mèo](category)
+      - [dinh duong cho meo]{"entity": "category", "value": "dinh dưỡng cho mèo"}
 
-- intent: bot_challenge
-  examples: |
-    - are you a bot?
-    - are you a human?
-    - am I talking to a bot?
-    - am I talking to a human?
+  - intent: xem_nhan_hieu
+    examples: |
+      - xem nhãn hàng
+      - shop có các nhãn hàng nào
+      - cho tui xem các nhãn hàng   
+      - cho mình xem danh sách nhãn hàng
+
+  - intent: chon_nhan_hieu
+    examples: |
+      - [CIAO](brand)
+      - [INABA](brand)
+      - [IRIS OHYAMA](brand)
+      - [JERHIGH](brand)
+      - [NUTRABONE](brand)
+      - [PEDIGREE](brand)
+      - [VEGEBRAND](brand)
+
+  - intent: tim_kiem_san_pham
+    examples: |
+      - tìm kiếm sản phẩm
+      - tui muốn tự tìm kiếm sản phẩm
+      - tôi muốn tìm kiếm sản phẩm
+
+  # - intent: xem_san_pham_theo_danh_muc
+  #   examples: |
+      
+
+# hỏi tư vấn chăm sóc thú cưng
+  - intent: tu_van_cham_soc
+    examples: |
+      - tư vấn chăm sóc
+      - cách chăm sóc thú cưng
+      - tui muốn được tư vấn về cách chăm sóc thú cưng
+      - tôi muốn được tư vấn về cách chăm sóc thú cưng
+      - mình muốn được tư vấn về cách chăm sóc thú cưng
+

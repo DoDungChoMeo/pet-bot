@@ -1,0 +1,141 @@
+t=2022-11-09T13:21:26+0700 lvl=warn msg="can't bind default web address, trying alternatives" obj=web addr=127.0.0.1:4040
+t=2022-11-09T13:21:26+0700 lvl=info msg="starting web service" obj=web addr=127.0.0.1:4041
+t=2022-11-09T13:21:27+0700 lvl=info msg="tunnel session started" obj=tunnels.session
+t=2022-11-09T13:21:27+0700 lvl=info msg="client session established" obj=csess id=e8caa46a28d2
+t=2022-11-09T13:21:27+0700 lvl=info msg="started tunnel" obj=tunnels name=rasa_actions addr=http://localhost:5055 url=https://8d83-2001-ee0-5423-2370-510b-3a22-f70f-83c9.ap.ngrok.io
+t=2022-11-09T13:21:27+0700 lvl=info msg="started tunnel" obj=tunnels name=rasa_server addr=http://localhost:5005 url=https://1aa6-2001-ee0-5423-2370-510b-3a22-f70f-83c9.ap.ngrok.io
+t=2022-11-09T13:21:39+0700 lvl=warn msg="failed to open private leg" id=1dc81ac8e8aa privaddr=localhost:5005 err="dial tcp [::1]:5005: connectex: No connection could be made because the target machine actively refused it."
+t=2022-11-09T13:21:43+0700 lvl=warn msg="failed to open private leg" id=5f1bb3145e08 privaddr=localhost:5005 err="dial tcp [::1]:5005: connectex: No connection could be made because the target machine actively refused it."
+t=2022-11-09T13:22:52+0700 lvl=warn msg="failed to open private leg" id=01d88378c8f5 privaddr=localhost:5055 err="dial tcp [::1]:5055: connectex: No connection could be made because the target machine actively refused it."
+t=2022-11-09T13:22:55+0700 lvl=warn msg="failed to open private leg" id=4b610e1222a4 privaddr=localhost:5055 err="dial tcp [::1]:5055: connectex: No connection could be made because the target machine actively refused it."
+t=2022-11-09T13:23:14+0700 lvl=info msg="Got quit command" obj=consoleui
+t=2022-11-09T13:23:14+0700 lvl=info msg="received stop request" obj=app stopReq="{err:<nil> restart:false}"
+t=2022-11-09T13:23:14+0700 lvl=info msg="session closing" obj=tunnels.session err=nil
+t=2022-11-09T13:23:14+0700 lvl=info msg="accept failed" obj=csess id=e8caa46a28d2 err="reconnecting session closed"
+t=2022-11-09T13:27:49+0700 lvl=info msg="starting web service" obj=web addr=127.0.0.1:4040
+t=2022-11-09T13:27:49+0700 lvl=info msg="tunnel session started" obj=tunnels.session
+t=2022-11-09T13:27:49+0700 lvl=info msg="client session established" obj=csess id=1483d903cead
+t=2022-11-09T13:27:49+0700 lvl=eror msg="session closing" obj=tunnels.session err="Only paid plans may bind custom subdomains.\nFailed to bind the custom subdomain 'ngrok.io' for the account 'tblyduc2412@gmail.com'.\nThis account is on the 'Free' plan.\n\nUpgrade to a paid plan at: https://dashboard.ngrok.com/billing/subscription\r\n\r\nERR_NGROK_313\r\n"
+t=2022-11-09T13:27:49+0700 lvl=info msg="accept failed" obj=csess id=1483d903cead err="reconnecting session closed"
+t=2022-11-09T13:27:49+0700 lvl=info msg="received stop request" obj=app stopReq="{err:0xc0000d45a0 restart:false}"
+t=2022-11-09T13:27:49+0700 lvl=eror msg="terminating with error" obj=app err="Only paid plans may bind custom subdomains.\nFailed to bind the custom subdomain 'ngrok.io' for the account 'tblyduc2412@gmail.com'.\nThis account is on the 'Free' plan.\n\nUpgrade to a paid plan at: https://dashboard.ngrok.com/billing/subscription\r\n\r\nERR_NGROK_313\r\n"
+t=2022-11-09T13:27:49+0700 lvl=crit msg="command failed" err="Only paid plans may bind custom subdomains.\nFailed to bind the custom subdomain 'ngrok.io' for the account 'tblyduc2412@gmail.com'.\nThis account is on the 'Free' plan.\n\nUpgrade to a paid plan at: https://dashboard.ngrok.com/billing/subscription\r\n\r\nERR_NGROK_313\r\n"
+t=2022-11-09T13:27:49+0700 lvl=warn msg="failed to check for update" obj=updater err="Post \"https://update.equinox.io/check\": context canceled"
+t=2022-11-09T13:29:27+0700 lvl=info msg="starting web service" obj=web addr=127.0.0.1:4040
+t=2022-11-09T13:29:27+0700 lvl=info msg="tunnel session started" obj=tunnels.session
+t=2022-11-09T13:29:27+0700 lvl=info msg="client session established" obj=csess id=632a6bab5c31
+t=2022-11-09T13:29:27+0700 lvl=eror msg="session closing" obj=tunnels.session err="Only paid plans may bind custom subdomains.\nFailed to bind the custom subdomain 'duc-rasa-server' for the account 'tblyduc2412@gmail.com'.\nThis account is on the 'Free' plan.\n\nUpgrade to a paid plan at: https://dashboard.ngrok.com/billing/subscription\r\n\r\nERR_NGROK_313\r\n"
+t=2022-11-09T13:29:27+0700 lvl=info msg="accept failed" obj=csess id=632a6bab5c31 err="reconnecting session closed"
+t=2022-11-09T13:29:27+0700 lvl=info msg="received stop request" obj=app stopReq="{err:0xc000356fc0 restart:false}"
+t=2022-11-09T13:29:27+0700 lvl=eror msg="terminating with error" obj=app err="Only paid plans may bind custom subdomains.\nFailed to bind the custom subdomain 'duc-rasa-server' for the account 'tblyduc2412@gmail.com'.\nThis account is on the 'Free' plan.\n\nUpgrade to a paid plan at: https://dashboard.ngrok.com/billing/subscription\r\n\r\nERR_NGROK_313\r\n"
+t=2022-11-09T13:29:27+0700 lvl=warn msg="failed to check for update" obj=updater err="Post \"https://update.equinox.io/check\": context canceled"
+t=2022-11-09T13:29:27+0700 lvl=crit msg="command failed" err="Only paid plans may bind custom subdomains.\nFailed to bind the custom subdomain 'duc-rasa-server' for the account 'tblyduc2412@gmail.com'.\nThis account is on the 'Free' plan.\n\nUpgrade to a paid plan at: https://dashboard.ngrok.com/billing/subscription\r\n\r\nERR_NGROK_313\r\n"
+t=2022-11-09T13:29:58+0700 lvl=info msg="starting web service" obj=web addr=127.0.0.1:4040
+t=2022-11-09T13:29:59+0700 lvl=info msg="tunnel session started" obj=tunnels.session
+t=2022-11-09T13:29:59+0700 lvl=info msg="client session established" obj=csess id=169152ee6d4a
+t=2022-11-09T13:29:59+0700 lvl=info msg="started tunnel" obj=tunnels name=rasa_actions addr=http://localhost:5055 url=https://e9da-2001-ee0-5423-2370-510b-3a22-f70f-83c9.ap.ngrok.io
+t=2022-11-09T13:29:59+0700 lvl=info msg="started tunnel" obj=tunnels name=rasa_server addr=http://localhost:5005 url=https://9465-2001-ee0-5423-2370-510b-3a22-f70f-83c9.ap.ngrok.io
+t=2022-11-09T13:30:04+0700 lvl=warn msg="failed to open private leg" id=1b7f157b0665 privaddr=localhost:5005 err="dial tcp [::1]:5005: connectex: No connection could be made because the target machine actively refused it."
+t=2022-11-09T13:30:08+0700 lvl=warn msg="failed to open private leg" id=72e1e25b1bc8 privaddr=localhost:5005 err="dial tcp [::1]:5005: connectex: No connection could be made because the target machine actively refused it."
+t=2022-11-09T13:30:08+0700 lvl=warn msg="failed to open private leg" id=edaff4aab5e9 privaddr=localhost:5055 err="dial tcp [::1]:5055: connectex: No connection could be made because the target machine actively refused it."
+t=2022-11-09T13:30:11+0700 lvl=warn msg="failed to open private leg" id=ba74daed730f privaddr=localhost:5055 err="dial tcp [::1]:5055: connectex: No connection could be made because the target machine actively refused it."
+t=2022-11-09T13:39:23+0700 lvl=info msg="join connections" obj=join id=9a129ebc1a64 l=127.0.0.1:5055 r=[2001:ee0:5423:2370:510b:3a22:f70f:83c9]:58383
+t=2022-11-09T13:39:35+0700 lvl=warn msg="failed to open private leg" id=e3ecf1bbb942 privaddr=localhost:5005 err="dial tcp [::1]:5005: connectex: No connection could be made because the target machine actively refused it."
+t=2022-11-09T13:39:38+0700 lvl=warn msg="failed to open private leg" id=c736a9b02141 privaddr=localhost:5005 err="dial tcp [::1]:5005: connectex: No connection could be made because the target machine actively refused it."
+t=2022-11-09T13:39:46+0700 lvl=info msg="join connections" obj=join id=9db2b4cc3e1c l=127.0.0.1:5055 r=[2001:ee0:5423:2370:510b:3a22:f70f:83c9]:58383
+t=2022-11-09T13:39:48+0700 lvl=info msg="join connections" obj=join id=6f5d7a7190f9 l=127.0.0.1:5055 r=27.2.226.73:61448
+t=2022-11-09T13:44:30+0700 lvl=info msg="join connections" obj=join id=f1e9eed46150 l=127.0.0.1:5005 r=[2001:ee0:5423:2370:510b:3a22:f70f:83c9]:58437
+t=2022-11-09T13:45:26+0700 lvl=info msg="join connections" obj=join id=928de4e34418 l=127.0.0.1:5005 r=[2a03:2880:13ff:8::face:b00c]:37694
+t=2022-11-09T13:45:32+0700 lvl=info msg="join connections" obj=join id=88fa6864851d l=127.0.0.1:5005 r=[2001:ee0:5423:2370:510b:3a22:f70f:83c9]:58483
+t=2022-11-09T13:45:52+0700 lvl=info msg="join connections" obj=join id=f36af7360174 l=127.0.0.1:5005 r=[2a03:2880:21ff:b::face:b00c]:54472
+t=2022-11-09T13:47:04+0700 lvl=info msg="join connections" obj=join id=f616d86c83b2 l=127.0.0.1:5005 r=[2a03:2880:10ff:f::face:b00c]:53574
+t=2022-11-09T13:47:24+0700 lvl=info msg="join connections" obj=join id=c661f6b46e72 l=127.0.0.1:5005 r=[2a03:2880:10ff::face:b00c]:50858
+t=2022-11-09T13:47:44+0700 lvl=info msg="join connections" obj=join id=8318a3f42267 l=127.0.0.1:5005 r=[2a03:2880:10ff::face:b00c]:62024
+t=2022-11-09T13:48:04+0700 lvl=info msg="join connections" obj=join id=55441e49c398 l=127.0.0.1:5005 r=[2a03:2880:10ff:a::face:b00c]:59616
+t=2022-11-09T13:48:25+0700 lvl=info msg="join connections" obj=join id=af4439f4c726 l=127.0.0.1:5005 r=[2a03:2880:10ff:e::face:b00c]:38588
+t=2022-11-09T13:48:48+0700 lvl=info msg="join connections" obj=join id=8b3b1eddb0c7 l=127.0.0.1:5005 r=[2a03:2880:10ff:16::face:b00c]:40252
+t=2022-11-09T13:49:23+0700 lvl=info msg="join connections" obj=join id=729d03cdcfc6 l=127.0.0.1:5005 r=[2a03:2880:10ff:d::face:b00c]:34322
+t=2022-11-09T13:51:05+0700 lvl=info msg="join connections" obj=join id=d4853f4a0b7b l=127.0.0.1:5005 r=[2a03:2880:10ff:4::face:b00c]:47206
+t=2022-11-09T13:52:51+0700 lvl=info msg="join connections" obj=join id=88c471c69a29 l=127.0.0.1:5005 r=[2a03:2880:10ff:e::face:b00c]:40904
+t=2022-11-09T13:54:22+0700 lvl=info msg="join connections" obj=join id=f7e0a15ad5d1 l=127.0.0.1:5005 r=[2a03:2880:10ff:15::face:b00c]:42732
+t=2022-11-09T13:55:58+0700 lvl=info msg="join connections" obj=join id=ae3be86bf196 l=127.0.0.1:5005 r=[2a03:2880:10ff:17::face:b00c]:53892
+t=2022-11-09T13:57:32+0700 lvl=info msg="join connections" obj=join id=f8c3d40b806e l=127.0.0.1:5005 r=[2a03:2880:10ff:3::face:b00c]:55298
+t=2022-11-09T13:59:07+0700 lvl=info msg="join connections" obj=join id=b344b3cd7aae l=127.0.0.1:5005 r=[2a03:2880:10ff:16::face:b00c]:55234
+t=2022-11-09T14:00:46+0700 lvl=info msg="join connections" obj=join id=ce0ac3793421 l=127.0.0.1:5005 r=[2a03:2880:10ff:1::face:b00c]:65140
+t=2022-11-09T14:02:24+0700 lvl=info msg="join connections" obj=join id=f0191b950bbb l=127.0.0.1:5005 r=[2a03:2880:10ff:3::face:b00c]:60120
+t=2022-11-09T14:03:58+0700 lvl=info msg="join connections" obj=join id=fcb2d6a0e433 l=127.0.0.1:5005 r=[2a03:2880:10ff:10::face:b00c]:54220
+t=2022-11-09T14:05:36+0700 lvl=info msg="join connections" obj=join id=a686189463eb l=127.0.0.1:5005 r=[2a03:2880:10ff:14::face:b00c]:34286
+t=2022-11-09T14:07:14+0700 lvl=info msg="join connections" obj=join id=c405a0a3b9e3 l=127.0.0.1:5005 r=[2a03:2880:10ff:15::face:b00c]:41396
+t=2022-11-09T14:08:58+0700 lvl=info msg="join connections" obj=join id=f56836e987bd l=127.0.0.1:5005 r=[2a03:2880:10ff:16::face:b00c]:38364
+t=2022-11-09T14:10:35+0700 lvl=warn msg="failed to open private leg" id=9dd2f7a04cb1 privaddr=localhost:5005 err="dial tcp [::1]:5005: connectex: No connection could be made because the target machine actively refused it."
+t=2022-11-09T14:11:53+0700 lvl=warn msg="failed to open private leg" id=dc303d7b4ff2 privaddr=localhost:5005 err="dial tcp [::1]:5005: connectex: No connection could be made because the target machine actively refused it."
+t=2022-11-09T14:13:16+0700 lvl=warn msg="failed to open private leg" id=63060cd75039 privaddr=localhost:5005 err="dial tcp [::1]:5005: connectex: No connection could be made because the target machine actively refused it."
+t=2022-11-09T14:14:27+0700 lvl=info msg="join connections" obj=join id=47c2773c22c4 l=127.0.0.1:5005 r=[2a03:2880:10ff:4::face:b00c]:43708
+t=2022-11-09T14:14:31+0700 lvl=info msg="join connections" obj=join id=7e6f05a992d9 l=127.0.0.1:5005 r=[2a03:2880:10ff:9::face:b00c]:60272
+t=2022-11-09T14:14:35+0700 lvl=info msg="join connections" obj=join id=8ef4a60e3639 l=127.0.0.1:5005 r=[2a03:2880:10ff:77::face:b00c]:34022
+t=2022-11-09T14:15:36+0700 lvl=info msg="join connections" obj=join id=56e5215019a8 l=127.0.0.1:5005 r=[2a03:2880:21ff:8::face:b00c]:41852
+t=2022-11-09T14:15:50+0700 lvl=info msg="join connections" obj=join id=542c2516811f l=127.0.0.1:5005 r=[2a03:2880:21ff:76::face:b00c]:62342
+t=2022-11-09T14:15:51+0700 lvl=info msg="join connections" obj=join id=40fdb5f5fb25 l=127.0.0.1:5055 r=[2001:ee0:5423:2370:510b:3a22:f70f:83c9]:58787
+t=2022-11-09T14:16:17+0700 lvl=info msg="join connections" obj=join id=3cf8cc678cba l=127.0.0.1:5005 r=[2a03:2880:21ff::face:b00c]:37210
+t=2022-11-09T14:34:49+0700 lvl=info msg="join connections" obj=join id=f85a75f35fce l=127.0.0.1:5005 r=[2a03:2880:21ff:12::face:b00c]:62242
+t=2022-11-09T14:34:59+0700 lvl=info msg="join connections" obj=join id=c56292b3b932 l=127.0.0.1:5005 r=[2a03:2880:21ff:14::face:b00c]:50892
+t=2022-11-09T14:38:25+0700 lvl=info msg="join connections" obj=join id=6a5ae0fbf0cb l=127.0.0.1:5005 r=[2a03:2880:21ff:9::face:b00c]:48080
+t=2022-11-09T17:14:41+0700 lvl=info msg="join connections" obj=join id=b9d9d8c8d1fa l=127.0.0.1:5055 r=[2001:ee0:5423:2370:510b:3a22:f70f:83c9]:64744
+t=2022-11-09T17:15:09+0700 lvl=info msg="join connections" obj=join id=c510ed0dbb21 l=127.0.0.1:5055 r=[2001:ee0:5423:2370:510b:3a22:f70f:83c9]:64760
+t=2022-11-09T17:19:49+0700 lvl=info msg="join connections" obj=join id=ec0c8fe48ed1 l=127.0.0.1:5055 r=[2001:ee0:5423:2370:510b:3a22:f70f:83c9]:65111
+t=2022-11-09T18:10:11+0700 lvl=info msg="join connections" obj=join id=7aaf4c59444e l=127.0.0.1:5055 r=[2001:ee0:5423:2370:510b:3a22:f70f:83c9]:50110
+t=2022-11-09T18:11:02+0700 lvl=info msg="join connections" obj=join id=ab0b92fd7d19 l=127.0.0.1:5055 r=[2001:ee0:5423:2370:510b:3a22:f70f:83c9]:50189
+t=2022-11-09T18:11:10+0700 lvl=info msg="join connections" obj=join id=ed397a4ebcf0 l=127.0.0.1:5005 r=[2001:ee0:5423:2370:510b:3a22:f70f:83c9]:50193
+t=2022-11-09T18:58:00+0700 lvl=info msg="join connections" obj=join id=674bc7535d86 l=127.0.0.1:5055 r=[2001:ee0:5423:2370:510b:3a22:f70f:83c9]:50415
+t=2022-11-09T18:58:11+0700 lvl=info msg="join connections" obj=join id=baa4e5ce934f l=127.0.0.1:5055 r=[2001:ee0:5423:2370:510b:3a22:f70f:83c9]:50428
+t=2022-11-09T19:17:18+0700 lvl=info msg="join connections" obj=join id=bb5dc8870b0b l=127.0.0.1:5055 r=[2001:ee0:5423:2370:510b:3a22:f70f:83c9]:51166
+t=2022-11-09T19:17:34+0700 lvl=info msg="join connections" obj=join id=5377647fe9d6 l=127.0.0.1:5005 r=[2001:ee0:5423:2370:510b:3a22:f70f:83c9]:51174
+t=2022-11-09T19:33:46+0700 lvl=eror msg="session closed, starting reconnect loop" obj=csess id=169152ee6d4a err="read tcp [2001:ee0:5423:2370:510b:3a22:f70f:83c9]:57856->[2406:da18:27f:c800::6e74:3]:443: wsarecv: An established connection was aborted by the software in your host machine."
+t=2022-11-09T19:33:47+0700 lvl=info msg="tunnel session started" obj=tunnels.session
+t=2022-11-09T19:33:48+0700 lvl=info msg="client session established" obj=csess id=169152ee6d4a
+t=2022-11-09T19:34:04+0700 lvl=eror msg="heartbeat timeout, terminating session" obj=csess id=b938be431c69 clientid=4d8ca440c8ab578e534c1e2bd284e2b7
+t=2022-11-09T20:15:17+0700 lvl=info msg="join connections" obj=join id=67920043cf6a l=127.0.0.1:5055 r=[2001:ee0:5423:2370:4c42:f7fc:ac8e:4ffc]:52441
+t=2022-11-09T20:20:18+0700 lvl=info msg="join connections" obj=join id=4f0cbe842b75 l=127.0.0.1:5055 r=[2001:ee0:5423:2370:4c42:f7fc:ac8e:4ffc]:52893
+t=2022-11-09T21:38:02+0700 lvl=info msg="join connections" obj=join id=653fe6843712 l=127.0.0.1:5005 r=[2a03:2880:10ff:14::face:b00c]:35246
+t=2022-11-09T21:38:16+0700 lvl=info msg="join connections" obj=join id=fff094489566 l=127.0.0.1:5005 r=[2a03:2880:10ff:74::face:b00c]:58136
+t=2022-11-09T21:38:18+0700 lvl=info msg="join connections" obj=join id=a6234901db71 l=127.0.0.1:5055 r=[2001:ee0:5423:2370:4c42:f7fc:ac8e:4ffc]:55505
+t=2022-11-09T21:38:44+0700 lvl=info msg="join connections" obj=join id=fa8ec03c1283 l=127.0.0.1:5005 r=[2a03:2880:10ff:17::face:b00c]:54596
+t=2022-11-09T21:38:46+0700 lvl=info msg="join connections" obj=join id=64c33dce2b43 l=127.0.0.1:5055 r=[2001:ee0:5423:2370:4c42:f7fc:ac8e:4ffc]:55524
+t=2022-11-09T21:40:06+0700 lvl=info msg="join connections" obj=join id=2be7e345efb8 l=127.0.0.1:5005 r=[2a03:2880:10ff:4::face:b00c]:35778
+t=2022-11-09T21:40:09+0700 lvl=info msg="join connections" obj=join id=c85a3e9e1e8b l=127.0.0.1:5055 r=[2001:ee0:5423:2370:4c42:f7fc:ac8e:4ffc]:55550
+t=2022-11-09T21:46:36+0700 lvl=info msg="join connections" obj=join id=c8c5f6e56a89 l=127.0.0.1:5005 r=[2a03:2880:10ff:13::face:b00c]:56560
+t=2022-11-09T21:46:56+0700 lvl=info msg="join connections" obj=join id=d13dfd8aeb2d l=127.0.0.1:5005 r=[2a03:2880:10ff:16::face:b00c]:49574
+t=2022-11-09T21:47:07+0700 lvl=info msg="join connections" obj=join id=2064932d7015 l=127.0.0.1:5005 r=[2a03:2880:10ff:c::face:b00c]:59354
+t=2022-11-09T21:47:53+0700 lvl=info msg="join connections" obj=join id=d12300c4dbfe l=127.0.0.1:5005 r=[2a03:2880:10ff:77::face:b00c]:58824
+t=2022-11-09T21:47:54+0700 lvl=info msg="join connections" obj=join id=71a2acbbde74 l=127.0.0.1:5055 r=[2001:ee0:5423:2370:4c42:f7fc:ac8e:4ffc]:55623
+t=2022-11-09T21:48:04+0700 lvl=info msg="join connections" obj=join id=2bf73a435774 l=127.0.0.1:5005 r=[2a03:2880:10ff:f::face:b00c]:55008
+t=2022-11-09T21:48:06+0700 lvl=info msg="join connections" obj=join id=f5e2f0be5f78 l=127.0.0.1:5055 r=[2001:ee0:5423:2370:4c42:f7fc:ac8e:4ffc]:55632
+t=2022-11-09T21:50:48+0700 lvl=info msg="join connections" obj=join id=b5ed11a7ebba l=127.0.0.1:5005 r=[2a03:2880:10ff:2::face:b00c]:33674
+t=2022-11-09T21:51:05+0700 lvl=info msg="join connections" obj=join id=0928e129aedc l=127.0.0.1:5055 r=[2001:ee0:5423:2370:4c42:f7fc:ac8e:4ffc]:55669
+t=2022-11-09T21:51:20+0700 lvl=info msg="join connections" obj=join id=8218b9a3cba1 l=127.0.0.1:5005 r=[2a03:2880:10ff:5::face:b00c]:39406
+t=2022-11-09T21:51:23+0700 lvl=info msg="join connections" obj=join id=28731a10e345 l=127.0.0.1:5055 r=[2001:ee0:5423:2370:4c42:f7fc:ac8e:4ffc]:55675
+t=2022-11-09T21:52:54+0700 lvl=info msg="join connections" obj=join id=f4ad1d486776 l=127.0.0.1:5005 r=[2a03:2880:10ff:74::face:b00c]:60566
+t=2022-11-09T21:53:14+0700 lvl=info msg="join connections" obj=join id=0da9d0c06e6a l=127.0.0.1:5005 r=[2a03:2880:10ff:b::face:b00c]:42124
+t=2022-11-09T21:53:23+0700 lvl=info msg="join connections" obj=join id=d59ba69f0bc1 l=127.0.0.1:5055 r=[2001:ee0:5423:2370:4c42:f7fc:ac8e:4ffc]:55697
+t=2022-11-09T22:41:20+0700 lvl=info msg="join connections" obj=join id=4eddad97acac l=127.0.0.1:5005 r=[2a03:2880:21ff:77::face:b00c]:33176
+t=2022-11-09T22:41:36+0700 lvl=info msg="join connections" obj=join id=51854a650ed3 l=127.0.0.1:5055 r=[2001:ee0:5423:2370:4c42:f7fc:ac8e:4ffc]:56927
+t=2022-11-09T22:41:50+0700 lvl=info msg="join connections" obj=join id=2f31b35b3338 l=127.0.0.1:5005 r=[2a03:2880:21ff:b::face:b00c]:59150
+t=2022-11-09T22:41:51+0700 lvl=info msg="join connections" obj=join id=a8358603900a l=127.0.0.1:5055 r=[2001:ee0:5423:2370:4c42:f7fc:ac8e:4ffc]:56934
+t=2022-11-10T11:39:22+0700 lvl=info msg="starting web service" obj=web addr=127.0.0.1:4040
+t=2022-11-10T11:39:23+0700 lvl=info msg="tunnel session started" obj=tunnels.session
+t=2022-11-10T11:39:23+0700 lvl=info msg="client session established" obj=csess id=acbfd14013c4
+t=2022-11-10T11:39:23+0700 lvl=info msg="started tunnel" obj=tunnels name=rasa_server addr=http://localhost:5005 url=https://7904-2001-ee0-5423-2370-65a2-12f5-71d6-676f.ap.ngrok.io
+t=2022-11-10T11:39:23+0700 lvl=info msg="started tunnel" obj=tunnels name=rasa_actions addr=http://localhost:5055 url=https://732b-2001-ee0-5423-2370-65a2-12f5-71d6-676f.ap.ngrok.io
+t=2022-11-10T11:39:33+0700 lvl=warn msg="failed to open private leg" id=8d829b0872f6 privaddr=localhost:5055 err="dial tcp [::1]:5055: connectex: No connection could be made because the target machine actively refused it."
+t=2022-11-10T11:39:36+0700 lvl=warn msg="failed to open private leg" id=b12de80c9be5 privaddr=localhost:5055 err="dial tcp [::1]:5055: connectex: No connection could be made because the target machine actively refused it."
+t=2022-11-10T11:39:39+0700 lvl=warn msg="failed to open private leg" id=d97054b0073b privaddr=localhost:5005 err="dial tcp [::1]:5005: connectex: No connection could be made because the target machine actively refused it."
+t=2022-11-10T11:39:43+0700 lvl=warn msg="failed to open private leg" id=2c690d33197f privaddr=localhost:5005 err="dial tcp [::1]:5005: connectex: No connection could be made because the target machine actively refused it."
+t=2022-11-10T11:47:31+0700 lvl=info msg="join connections" obj=join id=4db42be6bcac l=127.0.0.1:5055 r=[2001:ee0:5423:2370:65a2:12f5:71d6:676f]:52423
+t=2022-11-10T11:47:35+0700 lvl=warn msg="failed to open private leg" id=ad9cf825d47f privaddr=localhost:5005 err="dial tcp [::1]:5005: connectex: No connection could be made because the target machine actively refused it."
+t=2022-11-10T11:47:37+0700 lvl=warn msg="failed to open private leg" id=6e4d28d75e2a privaddr=localhost:5005 err="dial tcp [::1]:5005: connectex: No connection could be made because the target machine actively refused it."
+t=2022-11-10T11:47:51+0700 lvl=warn msg="failed to open private leg" id=358201a70070 privaddr=localhost:5005 err="dial tcp [::1]:5005: connectex: No connection could be made because the target machine actively refused it."
+t=2022-11-10T11:47:53+0700 lvl=warn msg="failed to open private leg" id=a2a8ac79869c privaddr=localhost:5005 err="dial tcp [::1]:5005: connectex: No connection could be made because the target machine actively refused it."
+t=2022-11-10T11:48:16+0700 lvl=info msg="join connections" obj=join id=42d3ceea1733 l=127.0.0.1:5005 r=[2001:ee0:5423:2370:65a2:12f5:71d6:676f]:52448
+t=2022-11-10T11:53:23+0700 lvl=info msg="join connections" obj=join id=4e6b91f6f30a l=127.0.0.1:5005 r=[2a03:2880:13ff:14::face:b00c]:47476
+t=2022-11-10T11:54:37+0700 lvl=info msg="join connections" obj=join id=34c375ac81e5 l=127.0.0.1:5005 r=[2a03:2880:20ff:c::face:b00c]:41008
+t=2022-11-10T11:55:15+0700 lvl=info msg="join connections" obj=join id=4d82f3e2e34b l=127.0.0.1:5005 r=[2a03:2880:20ff:3::face:b00c]:34016

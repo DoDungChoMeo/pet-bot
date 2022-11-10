@@ -1,33 +1,96 @@
-version: "3.1"
+version: '3.1'
 
 intents:
   - greet
   - goodbye
   - affirm
   - deny
-  - mood_great
-  - mood_unhappy
   - bot_challenge
+  - tu_van_san_pham
+  - tu_van_cham_soc
+  - xem_danh_muc
+  - xem_nhan_hieu
+  - tim_kiem_san_pham
+  - chon_danh_muc
+  - chon_nhan_hieu
+
+actions:
+  - action_categories
+  - action_get_products_from_category
+  - action_brands
+  - action_search
+
+entities:
+  - search_query
+  - category
+  - brand
+
+slots: 
+  category:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: category
+  brand:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: brand
+  search_query:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: search_query
 
 responses:
+  utter_welcome:
+    - text: |
+        Pet Friends xin chào quý khách. Quý khách cần hổ trợ gì có thể hỏi em ạ. 
+        Em có thể tư vấn về sản phẩm và cách chăm sóc thú cưng.
+      buttons:
+      - title: "Giới thiệu sản phẩm"
+        payload: "/tu_van_san_pham"
+      - title: "Cách chăm sóc thú cưng"
+        payload: "/tu_van_cham_soc"
+
   utter_greet:
-  - text: "Hey! How are you?"
-
-  utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
-
-  utter_did_that_help:
-  - text: "Did that help you?"
-
-  utter_happy:
-  - text: "Great, carry on!"
+    - text: 'Xin chào quý khách. Quý khách cần em giúp gì ạ?'
 
   utter_goodbye:
-  - text: "Bye"
+    - text: 'Tạm biệt quý khách'
+    - text: 'Hẹn gặp lại quý khách'
+    - text: |
+        Rất hân hạnh được phục vụ quý khách
+
+        Hẹn gặp lại quý khách
 
   utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
+    - text: |
+        Em là trợ lý ảo của Pet Friends. Em có thể tư vấn cho quý khách về lựa chọn sản phẩm và cách chăm sóc thú cưng. 
+        
+        Rất hân hạnh được phục vụ quý khách.
+
+# Kịch bản chính cho chatbot bán đồ dùng cho thú cưng
+  utter_tu_van_san_pham:
+    - text: "Hiện tại Pet Friends đang kinh doanh các mặt hàng về thức ăn, quần áo, đồ dùng sinh hoạt và chăm sóc cho chó và mèo."
+      buttons:
+      - title: "Xem danh mục sản phẩm"
+        payload: "/xem_danh_muc"
+      - title: "Xem danh sách nhãn hiệu"
+        payload: "/xem_nhan_hieu"
+      - title: "Tìm kiếm sản phẩm"
+        payload: "/tim_kiem_san_pham"
+
+  utter_chon_danh_muc:
+    - text: |
+        Quý đã chọn danh mục: {category}
+
+  utter_tu_van_cham_soc:
+    - text: |
+        Quý khách có thể đặt các câu hỏi liên quan đến cho mèo ví dụ như: 
+        - Cách chăm sóc chó con mới sinh?
+        - Mèo Anh lông ngắn có thay lông không?
 
 session_config:
   session_expiration_time: 60
