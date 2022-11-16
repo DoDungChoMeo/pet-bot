@@ -23,6 +23,18 @@
 #       products.append(doc.to_dict())
 #   return products
 
+# # def get_products_from_category(category_str, limit=10):
+# #     docs = db.collection(u'products').where(
+# #         u'categories', u'array_contains', 'đồ dùng cho chó').limit(limit).stream()
+# #     products = []
+# #     for doc in docs:
+# #         products.append(doc.to_dict())
+
+
+# #     print(products)
+# #     return products
+
+# # print(get_products_from_category('đồ dùng cho chó'))
 
 # def get_brands():
 #   docs = db.collection(u'brands').stream()
@@ -31,5 +43,13 @@
 #       brands.append(doc.to_dict())
 #   return brands
 
+# def get_products_from_brand(brand_str, limit=10):
+#     docs = db.collection(u'products').where(
+#         u'brand', u'==', brand_str).limit(limit).stream()
+#     products = []
+#     for doc in docs:
+#         products.append(doc.to_dict())
 
-  
+#     return products
+
+# print(get_products_from_brand("CIAO"))

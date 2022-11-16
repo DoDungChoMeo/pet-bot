@@ -17,33 +17,49 @@ from firebase_admin import credentials
 from firebase_admin import firestore
 
 # Use a service account.
-cred = credentials.Certificate('./actions/dodungchomeo-firebase-adminsdk-xziw5-7f7551a4b1.json')
+cred = credentials.Certificate(
+    './actions/dodungchomeo-firebase-adminsdk-xziw5-7f7551a4b1.json')
 
 app = firebase_admin.initialize_app(cred)
 
 db = firestore.client()
 
+
 def get_categories():
-  docs = db.collection(u'categories').stream()
-  categories = []
-  for doc in docs:
-      categories.append(doc.to_dict())
-  return categories
+    docs = db.collection(u'categories').stream()
+    categories = []
+    for doc in docs:
+        categories.append(doc.to_dict())
+    return categories
+
 
 def get_brands():
-  docs = db.collection(u'brands').stream()
-  brands = []
-  for doc in docs:
-      brands.append(doc.to_dict())
-  return brands
+    docs = db.collection(u'brands').stream()
+    brands = []
+    for doc in docs:
+        brands.append(doc.to_dict())
+    return brands
 
 
 def get_products_from_category(category_str, limit=10):
-  docs = db.collection(u'products').where(u'categories', u'array_contains', category_str).limit(limit).stream()
-  products = []
-  for doc in docs:
-      products.append(doc.to_dict())
-  return products
+    docs = db.collection(u'products').where(
+        u'categories', u'array_contains', category_str).limit(limit).stream()
+    products = []
+    for doc in docs:
+        products.append(doc.to_dict())
+
+    return products
+
+
+def get_products_from_brand(brand_str, limit=5):
+    docs = db.collection(u'products').where(
+        u'brand', u'==', brand_str).limit(limit).stream()
+    products = []
+    for doc in docs:
+        products.append(doc.to_dict())
+
+    return products
+
 
 # Hành động lấy danh mục sản phẩm ra từ database
 class ActionCategories(Action):
@@ -56,15 +72,29 @@ class ActionCategories(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
         textCategories = "Danh mục sản phẩm hiện có của shop\n"
-        for i in get_categories():
-            textCategories += "- {}\n".format(i['value'])
+        replies = []
+        for category in get_categories():
+            textCategories += "- {}\n".format(category['value'])
+            replies.append({
+                "content_type": "text",
+                "title": category['value'],
+                "payload": category['value'],
+            })
         textCategories += "Bạn muốn xem sản phẩm thuộc danh mục nào?"
 
-        dispatcher.utter_message(text=textCategories)
+
+        message = {
+            "text": textCategories,
+            "quick_replies": replies
+        }
+
+        dispatcher.utter_message(json_message=message)
 
         return []
 
 # Hành động lấy sản phẩm từ danh mục đã chọn ra từ database
+
+
 class ActionGetProductsFromCategory(Action):
 
     def name(self) -> Text:
@@ -74,33 +104,42 @@ class ActionGetProductsFromCategory(Action):
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
-        chosen_category = next(tracker.get_latest_entity_values('category'), None)
-        products = get_products_from_category(chosen_category)
-        
-        def messenger_template_elements(product):
-            return {
-                "title":product["title"],
-                "image_url":product["images"][0],
-                "subtitle":product["inventory"]["price"],      
-                "buttons":[
-                    {
-                    "type":"web_url",
-                    "url":f"https://dodungchomeo.web.app/product/{product['productId']}",
-                    "title":"Xem chi tiết"
-                    }        
-                ]      
-            }
-            
-        newProducts = list(map(messenger_template_elements, products))
-        message = {
-            "type": "template",
-            "payload": {
-                "template_type": "generic",
-                "elements": newProducts
-            }
-        }     
+        chosen_category = next(
+            tracker.get_latest_entity_values('category'), None)
+        chosen_category = chosen_category.capitalize()       
+        products = get_products_from_category(chosen_category, limit=5)
 
-        dispatcher.utter_message(attachment=message)
+        newProducts = []
+        for product in products:
+            newProducts.append({
+                "title": product["title"],
+                "image_url": product["images"][0],
+                "subtitle": f'{"{:,}".format(product["inventory"]["price"])} đồng',
+                "default_action": {
+                    "type": 'web_url',
+                    "url": f"https://dodungchomeo.web.app/product/{product['bookmarkName']}",
+                    "webview_height_ratio": "tall"
+                },
+                "buttons": [
+                    {
+                        "type": "web_url",
+                        "url": f"https://dodungchomeo.web.app/product/{product['bookmarkName']}",
+                        "title": "Xem chi tiết"
+                    }
+                ]
+            })
+
+        message = {
+            "attachment": {
+                "type": "template",
+                "payload": {
+                    "template_type": "generic",
+                    "elements": newProducts
+                }
+            }
+        }
+
+        dispatcher.utter_message(json_message=message)
 
         return []
 
@@ -116,11 +155,72 @@ class ActionBrands(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
         textBrands = "Danh sách nhãn nhiệu mà shop đang bán\n"
-        for i in get_brands():
-            textBrands += "- {}\n".format(i['value'])
+        replies = []
+        for brand in get_brands():
+            textBrands += "- {}\n".format(brand['value'])
+            replies.append({
+                "content_type": "text",
+                "title": brand['value'],
+                "payload": brand['value'],
+            })
         textBrands += "Bạn muốn xem sản phẩm thuộc nhãn hiệu nào?"
 
-        dispatcher.utter_message(text=textBrands)
+        message = {
+            "text": textBrands,
+            "quick_replies": replies
+        }
+
+        dispatcher.utter_message(json_message=message)
+
+        return []
+
+
+# Hành động lấy sản phẩm từ nhãn hàng
+class ActionGetProductsFromBrand(Action):
+
+    def name(self) -> Text:
+        return "action_get_products_from_brand"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+        # chosen_brand = next(
+        #     tracker.get_latest_entity_values('brand'), None)
+        # products = get_products_from_brand(chosen_brand, limit=10)
+        # print(products, chosen_brand)
+        # newProducts = []
+        # for product in products:
+        #     newProducts.append({
+        #         "title": product["title"],
+        #         "image_url": product["images"][0],
+        #         "subtitle": f'{"{:,}".format(product["inventory"]["price"])} đồng',
+        #         "default_action": {
+        #             "type": 'web_url',
+        #             "url": f"https://dodungchomeo.web.app/product/{product['bookmarkName']}",
+        #             "webview_height_ratio": "tall"
+        #         },
+        #         "buttons": [
+        #             {
+        #                 "type": "web_url",
+        #                 "url": f"https://dodungchomeo.web.app/product/{product['bookmarkName']}",
+        #                 "title": "Xem chi tiết"
+        #             }
+        #         ]
+        #     })
+
+        # message = {
+        #     "attachment": {
+        #         "type": "template",
+        #         "payload": {
+        #             "template_type": "generic",
+        #             "elements": newProducts
+        #         }
+        #     }
+        # }
+
+        # dispatcher.utter_message(json_message=message)
+        dispatcher.utter_message(text="get product from brand")
 
         return []
 
@@ -134,7 +234,7 @@ class ActionSearch(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        
+
         dispatcher.utter_message(text="Chức năng tìm kiếm sản phẩm")
 
         return []

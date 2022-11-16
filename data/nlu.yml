@@ -66,6 +66,7 @@ nlu:
   - intent: tu_van_san_pham
     examples: |
       - tư vấn về các sản phẩm
+      - giới thiệu sản phẩm
       - các sản phẩm đang được bày bán của shop
       - tui muốn được tư vấn về các sản phẩm đang được bày bán của shop
       - tôi muốn được tư vấn về các sản phẩm đang được bày bán của shop
@@ -73,6 +74,8 @@ nlu:
 
   - intent: xem_danh_muc
     examples: |
+      - xem danh mục
+      - danh mục sản phẩm
       - xem danh mục sản phẩm
       - xem các loại sản phẩm
       - có bao nhiêu loại sản phẩm
@@ -106,10 +109,19 @@ nlu:
 
   - intent: xem_nhan_hieu
     examples: |
+      - danh sách nhãn hiệu
       - xem nhãn hàng
+      - xem nhãn hiệu 
+      - xem thương hiệu
+      - xem danh sách thương hiệu
+      - xem  danh sách nhãn hàng
       - shop có các nhãn hàng nào
-      - cho tui xem các nhãn hàng   
+      - shop có các nhãn hiệu nào
+      - shop có các thương hiệu nào
+      - cho tui xem các nhãn hàng
+      - cho tui xem các nhãn hiệu
       - cho mình xem danh sách nhãn hàng
+      - cho mình xem danh sách nhãn hiệu
 
   - intent: chon_nhan_hieu
     examples: |

@@ -16,9 +16,10 @@ intents:
 
 actions:
   - action_categories
-  - action_get_products_from_category
   - action_brands
   - action_search
+  - action_get_products_from_category
+  - action_get_products_from_brand
 
 entities:
   - search_query
@@ -46,8 +47,8 @@ slots:
 responses:
   utter_welcome:
     - text: |
-        Pet Friends xin chào quý khách. Quý khách cần hổ trợ gì có thể hỏi em ạ. 
-        Em có thể tư vấn về sản phẩm và cách chăm sóc thú cưng.
+        Pet Friends xin chào quý khách.
+        Quý khách cần hổ trợ gì, thì có thể hỏi em ạ. Em có thể tư vấn về sản phẩm và cách chăm sóc thú cưng.
       buttons:
       - title: "Giới thiệu sản phẩm"
         payload: "/tu_van_san_pham"

@@ -2,79 +2,24 @@
 #### If you want to learn more, please see the docs: https://rasa.com/docs/rasa/testing-your-assistant
 
 stories:
-  - story: happy path 1
+  - story: test
     steps:
       - user: |
           xin chào
         intent: greet
-      - action: utter_greet
+      - action: utter_welcome
       - user: |
           tuyệt vời
-        intent: mood_great
-      - action: utter_happy
-
-  - story: happy path 2
-    steps:
+        intent: tu_van_san_pham
+      - action: utter_tu_van_san_pham
       - user: |
-          chào bạn
-        intent: greet
-      - action: utter_greet
+          xem danh mục
+        intent: xem_danh_muc
+      - action: action_categories
       - user: |
-          tuyệt vời
-        intent: mood_great
-      - action: utter_happy
-      - user: |
-          bye-bye!
-        intent: goodbye
-      - action: utter_goodbye
-
-  - story: sad path 1
-    steps:
-      - user: |
-          chào bạn
-        intent: greet
-      - action: utter_greet
-      - user: |
-          không tốt
-        intent: mood_unhappy
-      - action: utter_cheer_up
-      - action: utter_did_that_help
-      - user: |
-          được ạ
-        intent: affirm
-      - action: utter_happy
-
-  - story: sad path 2
-    steps:
-      - user: |
-          xin chao
-        intent: greet
-      - action: utter_greet
-      - user: |
-          tôi không được vui
-        intent: mood_unhappy
-      - action: utter_cheer_up
-      - action: utter_did_that_help
-      - user: |
-          không được
-        intent: deny
-      - action: utter_goodbye
-
-  - story: sad path 3
-    steps:
-      - user: |
-          hi
-        intent: greet
-      - action: utter_greet
-      - user: |
-          rất khủng khiếp
-        intent: mood_unhappy
-      - action: utter_cheer_up
-      - action: utter_did_that_help
-      - user: |
-          không
-        intent: deny
-      - action: utter_goodbye
+          xem nhãn hiệu
+        intent: xem_nhan_hieu
+      - action: action_brands
 
   - story: say goodbye
     steps:
@@ -89,10 +34,3 @@ stories:
           bạn là ai?
         intent: bot_challenge
       - action: utter_iamabot
-
-  - story: purchase
-    steps:
-      - user: |
-          Tôi muốn mua vài thứ?
-        intent: purchase
-      - action: utter_purchase
