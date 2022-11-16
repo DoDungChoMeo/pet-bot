@@ -1,3 +1,9 @@
+def write_to_json_file(data, file_name):
+  import json
+  json_object = json.dumps(data)
+  with open(file_name, "x") as outfile:
+    outfile.write(json_object)
+
 from bs4 import BeautifulSoup
 import requests
 
@@ -24,36 +30,43 @@ def classify_comments(comments):
 comments = get_comments()
 [ask_list, ask_answer_list] = classify_comments(comments)
 
-story_list = [] # item with len > 3
+
+# list only have ask but haven't answer yet
+ask_data = []
+for item in ask_list:
+  ask = (item[0].contents)[0].text
+  ask_data.append({"ask": ask})
+
+write_to_json_file(ask_data, "petmart_only_ask_data.json")
+
+
 ask_answer_data = []
+story_list = [] # item with len > 2
 for item in ask_answer_list:
   # [ask, answer] = item
   if (len(item) > 2):
     story_list.append(item)
   else:
     [ask, answer] = item
-    ask = ask.contents[0].string
-    answer = answer.contents[0].string
-    # print(f'ask: {ask} answer: {answer}')
+    ask = ask.contents[0].text
+    answer = answer.contents[0].text
     ask_answer_data.append({"ask": ask, "answer": answer})
 
-print(ask_answer_data)
+write_to_json_file(ask_answer_data, "petmart_ask_answer_data.json")
 
 
-import json
- 
-# Serializing json
-json_object = json.dumps(ask_answer_data)
- 
-# Writing to sample.json
-with open("ask_answer_petmart.json", "w") as outfile:
-    outfile.write(json_object)
-# ask_data = []
-# for item in ask_list:
-#   ask_data.append((item[0].contents)[0].string)
-# print(ask_data)
-
-# import csv
-# with open('ask_data.csv', 'w') as file:
-#     writer = csv.writer(file)
-#     writer.writerow(ask_data)
+stories_data = []
+for story in story_list:
+  i = 0
+  story_data = []
+  for item in story:
+    if i % 2 == 0:
+      ask = item.contents[0].text
+      story_data.append({"ask": ask})
+    else:
+      answer = item.contents[0].text
+      story_data.append({"answer": answer})
+    i += 1
+  stories_data.append(story_data)
+print(len(stories_data))
+write_to_json_file(stories_data, "petmart_stories_data.json")
