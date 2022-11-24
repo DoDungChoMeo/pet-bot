@@ -74,7 +74,7 @@ responses:
 
   utter_please_rephrase:
   - text: |
-        Xin lỗi, em vẩn chưa hiểu ý định của quý khách.
+        Xin lỗi, em vẫn chưa hiểu ý định của quý khách.
 
         Quý khách vui lòng đặt lại câu hỏi.
 
@@ -102,6 +102,15 @@ responses:
         Quý khách có thể đặt các câu hỏi liên quan đến cho mèo ví dụ như: 
         - Cách chăm sóc chó con mới sinh?
         - Mèo Anh lông ngắn có thay lông không?
+
+  utter_faq/0:
+    - text: |
+        Tôi tên là Đức
+  utter_faq/1:
+   - text: |
+        Năm nay 18 tuổi
+
+
 
 session_config:
   session_expiration_time: 60

@@ -152,3 +152,11 @@ nlu:
       - tôi muốn được tư vấn về cách chăm sóc thú cưng
       - mình muốn được tư vấn về cách chăm sóc thú cưng
 
+  - intent: faq/0
+    examples: |
+      - bạn tên gì
+      - tên của bạn là gì
+  - intent: faq/1
+    examples: |
+      - bạn bao nhiêu tuổi
+      - tuổi của bạn là bao nhiêu
