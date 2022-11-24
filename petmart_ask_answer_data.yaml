@@ -1,0 +1,364 @@
+- examples: "D\u1EA1 cho em h\u1ECFi, m\xE8o nh\xE0 em \u0111\u01B0\u1EE3c g\u1EA7\
+    n 4 n\u0103m tu\u1ED5i r\u1ED3i \u1EA1. Th\xEC b\xECnh th\u01B0\u1EDDng trong\
+    \ nh\xE0 c\u0169ng kh\xF4ng ch\xFA \xFD vi\u1EC7c ti\xEAm vaccine n\xEAn l\xE0\
+    \ m\xE8o ch\u01B0a c\xF3 m\u0169i ti\xEAm n\xE0o. Hai ba h\xF4m g\u1EA7n \u0111\
+    \xE2y, t\u1EF1 nhi\xEAn m\xE8o b\u1ECB ti\xEAu ch\u1EA3y (ph\xE2n l\u1ECFng c\xF3\
+    \ m\xE0u h\u1ED3ng nh\u1EA1t), c\xF3 cho nh\u1ECBn \u0103n c\u1EE1 8 ti\u1EBF\
+    ng r\u1ED3i cho \u0103n \xEDt \xEDt th\xE0nh t\u1EEBng b\u1EEFa (\u0111\u1ED3\
+    \ \u0103n h\u1EA1t c\u1EE7a m\xE8o), nh\u01B0ng m\xE8o v\u1EABn b\u1ECB ti\xEA\
+    u ch\u1EA3y, c\xF3 n\xF4n \xEDt (1 l\u1EA7n sau 3 ng\xE0y b\u1ECB ti\xEAu ch\u1EA3\
+    y), \u0103n c\u0169ng \xEDt l\u1EA1i. Mong c\xE1c b\xE1c s\u0129 t\u01B0 v\u1EA5\
+    n \u1EA1, em c\u1EA3m \u01A1n nhi\u1EC1u \u1EA1."
+  intent: ask/1
+- examples: "D\u1EA1 shop \u01A1i. B\xE9 nh\xE0 m\xECnh l\xE0 gi\u1ED1ng ch\xF3 Poodle\
+    \ 1,5kg. M\xECnh c\xF3 \u0111\u0103ng k\xFD ti\xEAm 7 b\u1EC7nh cho b\xE9. M\u1EDB\
+    i tu\u1EA7n tr\u01B0\u1EDBc m\xECnh \u0111i ti\xEAm m\u0169i th\u1EE9 3 cho b\xE9\
+    \ (t\u1EA1i c\u1EEDa h\xE0ng th\xFA y). Nh\u01B0ng do m\xECnh qu\xEAn kh\xF4ng\
+    \ mang s\u1ED5 ti\xEAm n\xEAn ng\u01B0\u1EDDi ta kh\xF4ng \u0111i\u1EC1n m\u0169\
+    i 3 cho \u0111\u01B0\u1EE3c. Nay m\xECnh nh\u1EDD \u0111\u1EE9a em cho b\xE9 \u0111\
+    i ti\xEAm d\u1EA1i. Nh\u01B0ng m\xECnh qu\xEAn kh\xF4ng nh\u1EAFc n\xF3 m\u0169\
+    i 3 ti\xEAm r\u1ED3i nh\u01B0ng qu\xEAn kh\xF4ng ghi v\xE0o s\u1ED5. L\u1EA7n\
+    \ n\xE0y m\xECnh \u0111\u1EBFn c\u1EEDa h\xE0ng kh\xE1c ti\xEAm, ng\u01B0\u1EDD\
+    i ta kh\xF4ng bi\u1EBFt n\xEAn ti\xEAm m\u0169i 3 l\u1EA1i l\u1EA7n n\u1EEFa.\
+    \ M\u0169i 3 tr\u01B0\u1EDBc v\u1EDBi m\u0169i 3 n\xE0y c\xE1ch nhau 1 tu\u1EA7\
+    n. Kh\xF4ng bi\u1EBFt b\xE9 nh\xE0 m\xECnh c\xF3 b\u1ECB sao kh\xF4ng \u1EA1.\
+    \ Em s\u01A1 su\u1EA5t qu\xE1 \u1EA1!"
+  intent: ask/2
+- examples: "B\xE1c s\u0129 cho em h\u1ECFi ch\xF3 nh\xE0 em \u0103n chu\xF4ng l\u1EAF\
+    c tr\xEAn v\xF2ng \u0111eo c\u1ED5 th\xEC c\xF3 b\u1ECB l\xE0m sao kh\xF4ng \u1EA1\
+    ?"
+  intent: ask/3
+- examples: "D\u1EA1 ch\xF3 c\u1EE7a em \u0111\u01B0\u1EE3c 2 th\xE1ng r\u01B0\u1EE1\
+    i tu\u1ED5i r\u1ED3i \u1EA1, em \u1EA5y ch\xEDch \u0111\u01B0\u1EE3c m\u0169i\
+    \ 6 tu\u1EA7n tu\u1ED5i v\xE0 9 tu\u1EA7n tu\u1ED5i. Em \u1EA5y ch\u01B0a ch\xED\
+    ch 12 tu\u1EA7n tu\u1ED5i v\xE0 16 tu\u1EA7n tu\u1ED5i. Ng\xE0y h\xF4m qua em\
+    \ c\xF3 \u0111\u01B0a em \u1EA5y ra c\xF4ng vi\xEAn ch\u01A1i v\xE0 c\xF3 nh\u1EEF\
+    ng con ch\xF3 kh\xE1c v\xEC n\u01A1i \u1EA5y l\xE0 cho ch\xF3. L\xFAc v\u1EC1\
+    \ th\xEC em \u1EA5y c\xF3 nh\u1EA3y l\xEAn ng\u01B0\u1EDDi ch\u1ED3ng em. R\u1ED3\
+    i m\xF3ng c\u1EE7a em \u1EA5y c\xE0o tay ch\u1ED3ng em 1 \u0111\u01B0\u1EDDng,\
+    \ v\xE0 n\xF3 ch\u1EC9 \u0111\u1ECF ch\u1ED7 \u0111\u1EA5y."
+  intent: ask/4
+- examples: "Ch\xF3 con c\u1EE7a em b\u1ECB ch\xF3 h\u1ECD n\xF3 c\u1EAFm l\u1EC7\
+    ch h\xE0m d\u01B0\u1EDBi\u2026 n\xF3 \u0103n u\u1ED1ng b\xECnh th\u01B0\u1EDD\
+    ng nh\u01B0ng c\xE1i h\xE0m d\u01B0\u1EDBi n\xF3 ki\u1EC3u nh\u01B0 b\u1ECB s\xE1\
+    i qua 1 b\xEAn. V\u1EADy c\xF3 c\xE1ch n\xE0o \u0111\u1EC3 n\xF3 th\u1EB3ng v\u1EC1\
+    \ v\u1ECB tr\xED c\u0169 kh\xF4ng \u1EA1?"
+  intent: ask/5
+- examples: "Ch\xF3 nh\xE0 em l\u1EA7n \u0111\u1EA7u l\xE0m m\u1EB9, n\xF3 b\u1ECB\
+    \ s\u1EA3y thai gi\u1EDD \u0111ang nh\u1EA3 thai ra. Em m\xE0 ch\u1EA1m v\xE0\
+    o th\xEC n\xF3 la \u0111\u1EBFn c\u1EAFn, c\xF3 c\xE1ch n\xE0o gi\xFAp n\xF3 b\xEC\
+    nh t\u0129nh l\u1EA1i kh\xF4ng \u1EA1? V\xE0 em n\xEAn cho n\xF3 u\u1ED1ng thu\u1ED1\
+    c g\xEC \u0111\u1EC3 b\u1EDBt \u0111au \u1EA1?"
+  intent: ask/6
+- examples: "Cho e h\u1ECFi, ch\xF3 em \u0111\u01B0\u1EE3c g\u1EA7n 3 th\xE1ng tu\u1ED5\
+    i, b\u1ECB t\xF4ng v\xE0 h\xECnh nh\u01B0 b\xE9 b\u1ECB t\xEA li\u1EC7t c\u1ED9\
+    t s\u1ED1ng, c\xF3 th\u1EC3 \u0103n u\u1ED1ng v\xE0 \u0111i v\u1EC7 sinh. Ch\xE2\
+    n tr\u01B0\u1EDBc c\u1EE7a b\xE9 c\u1EED \u0111\u1ED9ng \u0111\u01B0\u1EE3c, nh\u01B0\
+    ng ch\xE2n sau th\xEC kh\xF4ng. Khi \u0111\u1EE5ng nh\u1EB9 v\xE0o ph\u1EA7n l\u01B0\
+    ng th\xEC b\xE9 \u0111au v\xE0 la. Em kh\xF4ng th\u1EC3 \u1EB5m b\xE9 \u0111i\
+    \ \u0111c v\xEC b\xE9 \u0111au v\xE0 c\xF3 th\u1EC3 c\u1EAFn, h\u01A1n n\u1EEF\
+    a t\xECnh h\xECnh d\u1ECBch \u0111ang ph\u1EE9c t\u1EA1p. B\xE9 nh\xE0 em c\xF3\
+    \ th\u1EC3 h\u1ED3i ph\u1EE5c \u0111\u01B0\u1EE3c kh\xF4ng v\xE0 em n\xEAn l\xE0\
+    m g\xEC \u1EA1?"
+  intent: ask/7
+- examples: "Ch\xE0o anh ch\u1ECB, Ch\xF3 Lu nh\xE0 em c\u0169ng l\u1EDBn r\u1ED3\
+    i \u1EA1, 4 b\u1EEFa nay kh\xF4ng bi\u1EBFt c\xF4 \u1EA5y b\u1ECB g\xEC m\xE0\
+    \ m\u1EAFt m\u1EDF kh\xF4ng l\xEAn nh\u1EA5t l\xE0 v\xE0o ban \u0111\xEAm c\u1EE9\
+    \ nheo nheo ki\u1EC3u nh\u01B0 kh\xF4ng th\u1EA5y \u0111\u01B0\u1EDDng. Ng\xE0\
+    y \u0111\u1EA7u ti\xEAn em ph\xE1t hi\u1EC7n ch\u1EC9 b\u1ECB m\u1ED9t b\xEAn\
+    \ m\u1EAFt tr\xE1i kh\xF4ng m\u1EDF l\xEAn, em c\xF3 l\u1EA5y kh\u0103n gi\u1EA5\
+    y lau ch\u1ED7 m\u1EAFt v\xE0 xoa xoa nh\u1EB9 xung quanh m\u1EAFt c\u0169ng \u0111\
+    \u1EE1 \u0111\u1EE1 th\xF4i\u2026 2 ng\xE0y nay th\xEC c\u1EA3 hai con lu\xF4\
+    n kh\xF4ng m\u1EDF l\xEAn, bu\u1ED5i s\xE1ng c\xF3 m\u1EDF nh\u01B0ng kh\xF4ng\
+    \ to nh\u01B0 b\xECnh th\u01B0\u1EDDng. C\xF4 \u1EA5y v\u1EABn n\u0103ng \u0111\
+    \u1ED9ng \u0103n u\u1ED1ng b\xECnh th\u01B0\u1EDDng. Lu nh\xE0 em b\u1ECB nh\u01B0\
+    \ th\u1EBF th\xEC n\xEAn l\xE0m sao \u0111\xE2y \u1EA1? Mong anh ch\u1ECB t\u01B0\
+    \ v\u1EA5n gi\xFAp em v\u1EDBi \u1EA1!!!"
+  intent: ask/8
+- examples: "Ch\xE0o shop em c\u1EA7n l\u1EDDi khuy\xEAn v\xE0 t\u01B0 v\u1EA5n. Nh\xE0\
+    \ em c\xF3 nu\xF4i m\u1ED9t con m\xE8o anh l\xF4ng ng\u1EAFn tay c\u1EE5p m\xE0\
+    u x\xE1m, em nu\xF4i n\xF3 t\u1EEB l\xFAc m\u1EA5y th\xE1ng tu\u1ED5i v\xE0 n\xF3\
+    \ r\u1EA5t bi\u1EBFt ch\u1ED7 \u0111i v\u1EC7 sinh kh\xF4ng bao gi\u1EDD \u0111\
+    i b\u1EADy. Th\xEC nu\xF4i \u0111\u01B0\u1EE3c t\u1EA7m g\u1EA7n 1 n\u0103m th\xEC\
+    \ n\xF3 \u0111\xF2i \u0111\u1EF1c v\xE0 nh\xE0 em c\u0169ng \u0111\xE3 cho n\xF3\
+    \ \u0111i nh\u1EA3y, sau sinh con m\u1ED9t th\u1EDDi gian th\xEC n\xF3 b\u1EAF\
+    t \u0111\u1EA7u \u0111\xF2i \u0111\u1EF1c l\u1EA1i, k\xEAu g\xE0o v\xE0 b\u1EAF\
+    t \u0111\u1EA7u \u0111i v\u1EC7 sinh m\u1ED9t c\xE1ch v\xF4 t\u1ED9i v\u1EA1,\
+    \ trong nh\xE0 v\u1EC7 sinh, g\xF3c nh\xE0 v\xE0 c\u1EA3 b\u1ED3n r\u1EEDa ch\xE9\
+    n. Th\xEC nh\xE0 em c\xF3 mang n\xF3 \u0111i thi\u1EBFn, \u0111\u1EE1 \u0111\u01B0\
+    \u1EE3c 1 th\u1EDDi gian th\xEC t\xECnh tr\u1EA1ng n\xE0y l\u1EA1i ti\u1EBFp t\u1EE5\
+    c t\xECnh tr\u1EA1ng n\xE0y (m\u1ED7i t\u1ED9i l\xE0 kh\xF4ng g\xE0o th\xE9t n\u1EEF\
+    a) ch\u1ED7 v\u1EC7 sinh n\xF3 th\xEC nh\xE0 em lu\xF4n d\u1ECDn d\u1EB9p th\u01B0\
+    \u1EDDng xuy\xEAn 1 l\u1EA7n 1 ng\xE0y. Em mu\u1ED1n xin l\u1EDDi khuy\xEAn t\u1EEB\
+    \ b\xEAn shop v\xE0 kh\xF4ng bi\u1EBFt c\xF3 c\xE1ch n\xE0o \u0111\u1EC3 k\u1EBF\
+    t th\xFAc t\xECnh tr\u1EA1ng n\xE0y kh\xF4ng?"
+  intent: ask/9
+- examples: "B\xE1c s\u0129 \u01A1i, b\xE9 hamster 1 tu\u1EA7n tu\u1ED5i c\u1EE7a\
+    \ em b\u1ECB ki\u1EBFn c\u1EAFn \u1EDF tay b\u1ECB s\u01B0ng th\xEC kh\xF4ng bi\u1EBF\
+    t l\xE0 n\xEAn l\xE0m g\xEC \u1EA1?"
+  intent: ask/10
+- examples: "Ch\xE0o shop. M\xECnh c\xF3 b\xE9 c\xFAn m\u1EDBi \u0111i l\u1EA1c c\xE1\
+    ch \u0111\xE2y 3 ng\xE0y v\xE0 c\xF3 t\xECm \u0111\u01B0\u1EE3c b\xE9 l\u1EA1\
+    i v\u1EC1 trong \u0111\xEAm. Sau khi v\u1EC1 nh\xE0 th\xEC b\xE9 c\xF3 bi\u1EC3\
+    u hi\u1EC7n ch\xE1n ch\u01B0\u1EDDng, ng\u1EE7 nhi\u1EC1u h\u01A1n. H\u1ED3i gi\u1EDD\
+    \ b\xE9 nh\xE0 m\xECnh gh\xE9t ng\u1EE7 n\u1EC7m \u0111\u1ED3 l\u1EAFm m\xE0 nay\
+    \ th\xEC l\xEAn n\u1EC7m ng\u1EE7 cu\u1ED9n tr\xF2n. Ngo\xE0i gi\u1EDD \u0103\
+    n u\u1ED1ng ra th\xEC b\xE9 ch\u1EC9 n\u1EB1m ng\u1EE7 su\u1ED1t th\xF4i, tr\u01B0\
+    \u1EDBc th\xEC b\xE9 c\xF2n ch\u01A1i ch\u1EA1y nh\u1EA3y. Ng\u1EE7 \u0111\xF4\
+    i khi b\u1ECB n\u1EB1m m\u1EDB, gi\u1EADt m\xECnh. Ko bi\u1EBFt l\xE0 nh\u1EEF\
+    ng bi\u1EC3u hi\u1EC7n n\xE0y l\xE0 tr\u1ECBu ch\u1EE9ng c\u1EE7a t\xE2m l\xFD\
+    \ hay l\xE0 do b\xE9 c\xF2n \u0111ang ho\u1EA3n lo\u1EA1n do b\u1ECB l\u1EA1c\
+    \ \u1EA1? \u0110\xE2y l\xE0 l\u1EA7n \u0111\u1EA7u ti\xEAn b\xE9 b\u1ECB l\u1EA1\
+    c kh\u1ECFi gia \u0111\xECnh \u1EA1. Mong nh\u1EADn \u0111\u01B0\u1EE3c s\u1EF1\
+    \ h\u1ED7 tr\u1EE3 t\u1EEB shop."
+  intent: ask/11
+- examples: "Ch\xF3 nh\xE0 em b\u1ECB s\u01B0ng ph\xF9 r\u1EA5t to \u1EDF c\u1ED5\
+    . Nh\u01B0ng kh\xF4ng th\u1EA5y \u0111au, \u0103n u\u1ED1ng b\xECnh th\u01B0\u1EDD\
+    ng v\xE0 s\u1EDD v\xE0o ch\u1ED7 s\u01B0ng c\u0169ng kh\xF4ng th\u1EA5y c\u1EE9\
+    ng. Ch\xF3 c\u0169ng ch\u01B0a c\xF3 bi\u1EC3u hi\u1EC7n g\xEC b\u1EA5t th\u01B0\
+    \u1EDDng. Nh\u01B0ng k\xEDch th\u01B0\u1EDBc kh\u1ED1i u ng\xE0y c\xE0ng l\u1EDB\
+    n \u1EA1. Gi\u1EDD ph\u1EA3i l\xE0m sao \u1EA1?"
+  intent: ask/12
+- examples: "Ch\xE0o b\xE1c s\u0129 cho m\xECnh h\u1ECFi \u1EA1 m\xE8o nh\xE0 em \u0111\
+    \u01B0\u1EE3c 2 th\xE1ng tu\u1ED5i l\xFAc s\xE1ng b\xE9 c\xF3 \u0111\u1EE9ng tr\xEA\
+    n tay m\xECnh v\xE0 b\u1ECB ng\xE3 xu\u1ED1ng l\xFAc ng\xE3 b\xE9 c\xF3 b\xE1\
+    m v\xE0o tay m\xECnh \u0111\u1EC3 l\u1EA1i v\u1EBFt c\xE0o c\xF3 ch\u1EA3y m\xE1\
+    u th\xEC m\xECnh c\xF3 n\xEAn \u0111i ti\xEAm kh\xF4ng \u1EA1. Tr\u01B0\u1EDB\
+    c \u0111\xF3 m\u1EB9 c\u1EE7a b\xE9 \u0111\xE3 ti\xEAm ph\xF2ng d\u1EA1i r\u1ED3\
+    i \u1EA1!"
+  intent: ask/13
+- examples: "Ch\xF3 m\u1EB9 hay n\u1EB1m \u0111\xE8 l\xEAn con th\xEC c\xF3 n\xEA\
+    n t\xE1ch ch\xF3 m\u1EB9 v\u1EDBi ch\xF3 con ra ri\xEAng kh\xF4ng \u1EA1?"
+  intent: ask/14
+- examples: "Em c\xF3 mua thu\u1ED1c nh\u1ECF g\xE1y b\xEAn m\xECnh v\xE0 c\xF3 nh\u1ECF\
+    \ cho b\xE9 m\xE8o nh\xE0 em, th\xEC b\xE9 bi\u1EC3u hi\u1EC7n g\xE3i nhi\u1EC1\
+    u h\u01A1n b\xECnh th\u01B0\u1EDDng li\u1EC7u c\xF3 sao kh\xF4ng \u1EA1?"
+  intent: ask/15
+- examples: "Khi mua \u0111\u1ED3 cho ch\xF3 m\xE8o \u1EDF Petmart th\xEC m\xECnh\
+    \ c\xF3 c\u1EA7n mang ch\xFA ch\xF3 \u0111\u1EBFn c\u1EEDa h\xE0ng \u0111\u1EC3\
+    \ t\u01B0 v\u1EA5n mua \u0111\u1ED3 kh\xF4ng?"
+  intent: ask/16
+- examples: "Cho em h\u1ECFi l\xE0 em c\xF3 nu\xF4i 1 b\xE9 c\xFAn em kh\xF4ng bi\u1EBF\
+    t sao m\xE0 ch\xE2n n\xF3 b\u1ECB s\u01B0ng t\xEDm ph\xF9 l\xEAn c\xF3 c\xE1ch\
+    \ n\xE0o ch\u1EEFa tr\u1ECB kh\xF4ng \u1EA1?"
+  intent: ask/17
+- examples: "Ch\xF3 nh\xE0 em t\u1EA7m 4 th\xE1ng tu\u1ED5i, b\u1ECB c\u1EAFt ria\
+    \ m\xE9p n\xEAn n\xF3 bu\u1ED3n kh\xF4ng ho\u1EA1t \u0111\u1ED9ng nh\u01B0 tr\u01B0\
+    \u1EDBc v\xE0 kh\xF4ng \u0103n u\u1ED1ng g\xEC h\u01A1n 1 ng\xE0y, n\xF3 c\xF3\
+    \ o\u0301i v\xE0 ti\xEAu ch\u1EA3y, \u0111\u01B0a \u0111\u1ED3 \u0103n th\xEC\
+    \ ng\u1EADm ch\u1EB7t mi\u1EC7ng kh\xF4ng \u0103n u\u1ED1ng g\xEC \u1EA1, gi\xFA\
+    p em v\u1EDBi."
+  intent: ask/18
+- examples: "Cho em h\u1ECFi m\xE8o nh\xE0 em sinh con \u0111\u01B0\u1EE3c t\u1EA7\
+    m h\u01A1n 1 th\xE1ng, m\xE8o con \u0111\xE3 bi\u1EBFt \u0103n ch\xFAt \xEDt,\
+    \ h\xF4m nay s\xE1ng ra em th\u1EA5y b\u1EE5ng m\xE8o m\u1EB9 ph\u1EA7n b\u1EA7\
+    u s\u1EEFa b\u1ECB c\u1EE9ng nh\u01B0 \u0111\u1ED9n mi\u1EBFng m\u0169 d\u1EA7\
+    y v\xE0o b\u1EE5ng, cho em h\u1ECFi l\xE0 c\xF3 b\u1ECB nh\u01B0 n\xE0o kh\xF4\
+    ng \u1EA1, e c\u1EA3m \u01A1n!"
+  intent: ask/19
+- examples: "Petmart cho m\xECnh h\u1ECFi. M\xECnh c\xF3 ch\xFA m\xE8o m\u1EDBi sinh\
+    \ \u0111\u01B0\u1EE3c 5 b\xE9. \u0110\u01B0\u1EE3c 3 h\xF4m \u0111\u1EA7u th\xEC\
+    \ n\xF3 \u0111\u1EC3 con \u1EDF y\xEAn trong \u1ED5 l\xFAc \u0111\u1EA7u n\xF3\
+    \ sinh. M\xE0 gi\u1EDD n\xF3 c\u1EE9 c\u1EA7m con \u0111\u1EBFn ch\u1ED7 kh\xE1\
+    c. M\xE0 m\xECnh s\u1EE3 kh\xF4ng an t\xF2an n\xEAn mu\u1ED1n n\xF3 \u0111\u1EC3\
+    \ con trong \u1ED5 c\u0169. V\u1EADy c\xF3 c\xE1ch n\xE0o kh\xF4ng?"
+  intent: ask/20
+- examples: "T\xF4i c\xF3 th\u1EC3 b\u1ECB nhi\u1EC5m virus Corona vi\xEAm ph\u1ED5\
+    i c\u1EA5p t\u1EEB th\xFA c\u01B0ng c\u1EE7a m\xECnh ho\u1EB7c c\xE1c \u0111\u1ED9\
+    ng v\u1EADt kh\xE1c kh\xF4ng? N\u1EBFu t\xF4i b\u1ECB b\u1EC7nh do COVID-19, t\xF4\
+    i c\xF3 th\u1EC3 l\xE2y vi r\xFAt cho th\xFA v\u1EADt c\u1EE7a m\xECnh kh\xF4\
+    ng? T\xF4i c\xF3 n\xEAn \u0111\u01B0a th\xFA c\u01B0ng c\u1EE7a m\xECnh \u0111\
+    i x\xE9t nghi\u1EC7m COVID-19 kh\xF4ng? \u0110\u1ED9ng v\u1EADt c\xF3 th\u1EC3\
+    \ mang vi r\xFAt g\xE2y COVID-19 tr\xEAn da ho\u1EB7c l\xF4ng c\u1EE7a ch\xFA\
+    ng kh\xF4ng?"
+  intent: ask/21
+- examples: "Ch\xF3 c\u1EE7a em b\xECnh th\u01B0\u1EDDng kh\xF4n, nghe l\u1EDDi nh\u01B0\
+    ng m\u1ED7i khi t\u1EAFm b\xE9 tr\u1EDF n\xEAn r\u1EA5t d\u1EEF, kh\xF4ng cho\
+    \ em lau ng\u01B0\u1EDDi, lau l\u1ED7 tai hay \u0111\u1EE5ng v\xE0o ch\xE2n c\u1EE7\
+    a b\xE9, c\xF3 th\u1EC3 quay qua g\u1EEB ho\u1EB7c c\u1EAFn. Vi\u1EC7c v\u1EC7\
+    \ sinh tai c\u0169ng r\u1EA5t kh\xF3. Cho em h\u1ECFi l\xE0m sao \u0111\u1EC3\
+    \ c\u1EA3i thi\u1EC7n \u0111\u01B0\u1EE3c vi\u1EC7c n\xE0y \u1EA1 ? Kh\xF4ng v\u1EC7\
+    \ sinh tai 1 th\u1EDDi gian d\xE0i th\xEC c\xF3 sao kh\xF4ng \u1EA1 ?"
+  intent: ask/22
+- examples: "Em c\xF3 nu\xF4i 1 em m\xE8o t\u1EEB 2014, \u1EDF nh\xE0 em v\u1EABn\
+    \ cho \u0103n c\u01A1m rau th\u1ECBt b\xECnh th\u01B0\u1EDDng. \u0110\u1EBFn 2018\
+    \ v\xEC \u0111i\u1EC1u ki\u1EC7n gia \u0111\xECnh em nh\u1EDD b\xE1c nu\xF4i h\u1ED9\
+    , b\xE1c em ch\u1EC9 cho m\xE8o \u0103n m\u1ED7i h\u1EA1t. B\xE2y gi\u1EDD em\
+    \ nh\u1EADn m\xE8o v\u1EC1 cho m\xE8o \u0103n h\u1EA1t 1 tu\u1EA7n \u0111\u1EC3\
+    \ quen ch\u1ED7 m\u1EDBi r\u1ED3i, nh\u01B0ng n\xF3 kh\xF4ng \u0103n c\u01A1m\
+    \ \u1EA1 d\xF9 c\xF3 tr\u1ED9n v\u1EDBi c\xE1 hay th\u1ECBt. L\xE0m th\u1EBF n\xE0\
+    o \u0111\u1EC3 thay \u0111\xF4i c\xE1ch \u0103n c\u1EE7a m\xE8o b\xE2y gi\u1EDD\
+    \ \u1EA1?"
+  intent: ask/23
+- examples: "Pet Mart \u01A1i, s\xE1ng nay con dog nh\xE0 e \u0111ang kh\u1ECFe m\u1EA1\
+    nh, \u0111\u1ED9t nhi\xEAn g\u1EA7n t\u1ED1i b\u1ECB n\xF4n r\u1EA5t nhi\u1EC1\
+    u l\u1EA7n, m\xE0 to\xE0n n\xF4n ra n\u01B0\u1EDBc th\xF4i, c\xE1i n\xE0y c\xF3\
+    \ nguy hi\u1EC3m ko \u1EA1, v\xE0 l\xE0m sao cho ch\xF3 nh\xE0 e h\u1EBFt n\xF4\
+    n \u1EA1"
+  intent: ask/24
+- examples: "Pet Mart \u01A1i. B\xE9 poddle nh\xE0 em 7 th\xE1ng. Em mang b\xE9 t\u1EEB\
+    \ qu\xEA xu\u1ED1ng h\xE0 n\u1ED9i, nu\xF4i \u0111c g\u1EA7n th\xE1ng th\xEC b\xE9\
+    \ th\u1EC9nh tho\u1EA3ng c\u1EE9 hay b\u1ECB n\xF4n, n\xF4n ra c\u1EA3 th\u1EE9\
+    c \u0103n. Th\u1EC9nh tho\u1EA3ng b\u1ECDt tr\u1EAFng, b\u1ECDt v\xE0ng\u2026\
+    \ \u0111i \u1EC9a b\xECnh th\u01B0\u1EDDng, c\u1ECFn c\xF3 hi\u1EC7n t\u01B0\u1EE3\
+    ng t\xE1o b\xF3n\u2026 b\xE9 ch\u01A1i ho\u1EA1t b\xE1t nh\u01B0 th\u01B0\u1EDD\
+    ng (m\u1EDBi t\u1EA9y giun) l\xE0 b\u1ECB sao \u1EA1?"
+  intent: ask/25
+- examples: "Pet Mart \u01A1i ch\xF3 em m\u1EDBi \u0111\u1EBB m\xE0 ch\xF3 con tr\xEA\
+    n b\u1EE5ng n\u1ED5i h\u1ED9t nh\u1ECF nh\u1ECF xong kh\xF4 th\xEC \u0111en l\u1EA1\
+    i. Ch\xF3 con nh\xE0 e b\u1ECB sao \u1EA1 l\xE0m sao \u0111\u1EC3 h\u1EBFt \u1EA1\
+    ."
+  intent: ask/26
+- examples: "E c\xF3 nu\xF4i 2 b\xE9 m\xE8o anh h\u01A1n 5 th\xE1ng tu\u1ED5i nh\u01B0\
+    ng 2 b\xE9 hay b\u1ECB h\u1EAFt h\u01A1i v\xE0 l\xE2u l\xE2u l\u1EA1i b\u1ECB\
+    \ kh\u1ECBt kh\u1ECBt gi\u1ED1ng nh\u01B0 ki\u1EC3u s\u1EAFp n\xF4n (m\u1ED9t\
+    \ trong hai b\xE9 c\xF3 n\xF4n m\u1ED9t l\u1EA7n). C\xF2n n\u1EEFa l\xE0 m\u1ED9\
+    t b\xE9 b\u1ECB c\xE1t s\xE1t m\xF3ng b\u1ECB ch\u1EA3y m\u1ED9t \xEDt m\xE1u\
+    \ th\xEC c\u1EA7n l\xE0m g\xEC \u1EA1?"
+  intent: ask/27
+- examples: "B\xE1c s\u0129 \u01A1i con m\xE8o nh\xE0 con n\xF3 m\u1EDBi \u0111\u01B0\
+    \u1EE3c 23 ng\xE0y tu\u1ED5i n\xF3 b\u1ECB ti\xEAu ch\u1EA3y hay b\u1ECB g\xEC\
+    \ con kh\xF4ng bi\u1EBFt n\u1EEFa con ph\u1EA3i l\xE0m sao \u1EA1"
+  intent: ask/28
+- examples: "Cho em h\u1ECFi Pet Mart c\xF3 b\xE1n v\u1EADt nu\xF4i kh\xF4ng \u1EA1\
+    \ hay ch\u1EC9 b\xE1n d\u1EE5ng c\u1EE5, th\u1EE9c \u0103n cho ch\xF3 m\xE8o kh\xF4\
+    ng th\xF4i?"
+  intent: ask/29
+- examples: "M\xECnh c\xF3 ch\xF3 c\xE1i \u0111ang \u0111\u1EE3t \u0111\u1ED9ng d\u1EE5\
+    c m\xE0 \u0111\u1EC3 x\u1ED5ng m\u1EA5t \u0111\u1EC3 n\xF3 quan h\u1EC7 v\u1EDB\
+    i ch\xF3 \u0111\u1EF1c t\u1EA7m 30s th\xEC m\xECnh ng\u0103n l\u1EA1i v\u1EAD\
+    y th\xEC c\xF3 t\u1EC9 l\u1EC7 d\xEDnh b\u1EA7u kh\xF4ng \u1EA1?"
+  intent: ask/30
+- examples: "B\xE1c s\u0129 \u01A1i cho em h\u1ECFi m\xE8o nh\xE0 em h\xF4m qua \u0111\
+    \u1EBB m\u1ED9t con xong n\xF3 kh\xF4ng \u0111\u1EBB n\u1EEFa b\u1EE5ng v\u1EAB\
+    n c\xF2n to \u1EA1 \u0111\u1EBB xong \u0103n u\u1ED1ng v\u1EABn b\xECnh th\u01B0\
+    \u1EDDng \u1EA1 c\xF3 ph\u1EA3i n\xF3 \u0111\u1EBB s\xF3t con kh\xF4ng \u1EA1?"
+  intent: ask/31
+- examples: "Ch\xF3 nh\xE0 ngo\u1EA1i em ( \u0111\u1EBFn th\xE1ng 09/2020 n\u0103\
+    m nay tr\xF2n 9 tu\u1ED5i ) \u0111\u1ED9t nhi\xEAn v\xE0i h\xF4m nay th\u1EDF\
+    \ kh\xF2 kh\xE8, h\u1ED5n h\u1EC3n v\xE0 k\xEAu r\xEAn \u01B0 \u1EED, l\u01B0\u1EE1\
+    i th\xE8 ra ( kh\xF4ng ch\u1EA3y d\xE3i ). Th\xE2n b\xE9 run l\xEAn khi th\u1EDF\
+    \ v\xE0 k\xEAu, m\xE0u l\u01B0\u1EE1i v\u1EABn \u0111\u1EADm nh\u01B0ng n\u01B0\
+    \u1EDBu l\u1EA1i nh\u1EA1t m\xE0u. B\xE9 \u0103n u\u1ED1ng v\u1EABn b\xECnh th\u01B0\
+    \u1EDDng v\xE0 kh\xF4ng h\u1EC1 ch\xE1n \u0103n. V\xE0i h\xF4m nay th\u1EDDi ti\u1EBF\
+    t kh\xE1 n\xF3ng n\xEAn em s\u1EE3 b\xE9 b\u1ECB s\u1ED1c nhi\u1EC7t ( \u0111\u1EBF\
+    n cu\u1ED1i tu\u1EA7n em m\u1EDBi v\u1EC1 ngo\u1EA1i n\xEAn m\u1EDBi bi\u1EBF\
+    t ) v\xE0 \u0111\xE3 cho b\xE9 u\u1ED1ng n\u01B0\u1EDBc. B\xE9 u\u1ED1ng r\u1EA5\
+    t nhi\u1EC1u nh\u01B0ng v\u1EABn gi\u1EEF nguy\xEAn t\xECnh tr\u1EA1ng nh\u01B0\
+    \ tr\xEAn v\xE0 b\xE9 t\u1EEB ch\u1ED1i u\u1ED1ng ti\u1EBFp. Khi s\u1EE7a, ti\u1EBF\
+    ng b\xE9 kh\xE0n h\u01A1n h\u1EB3n. Tuy v\u1EADy, b\xE9 v\u1EABn ph\u1EA3n x\u1EA1\
+    \ r\u1EA5t t\u1ED1t. V\u1EABn m\u1EEBng ng\u01B0\u1EDDi v\xE0 ch\u1EA1y \u0111\
+    \u1EBFn khi \u0111\u01B0\u1EE3c g\u1ECDi, ph\u1EA3n \u1EE9ng c\u01A1 th\u1EC3\
+    \ nhanh nh\u1EA1y. Cho em h\u1ECFi b\xE9 b\u1ECB g\xEC \u1EA1? T\xECnh tr\u1EA1\
+    ng \u0111\xE3 k\xE9o d\xE0i v\xE0i ng\xE0y, mong b\xE1c s\u0129 tr\u1EA3 l\u1EDD\
+    i s\u1EDBm \u1EA1. Em c\u1EA3m \u01A1n."
+  intent: ask/32
+- examples: "M\xE8o nh\xE0 m\xECnh kho\u1EA3ng 3 th\xE1ng tu\u1ED5i , n\xF3 hay c\u1EAF\
+    n v\xE0o m\u1EC1n c\u1EE7a m\xECnh r\u1ED3i l\xE0m \u0111\u1ED9ng t\xE1c nh\xE0\
+    o b\u1ED9t, nh\u01B0ng k\u1EF3 l\u1EA1 l\xE0 n\xF3 th\u1EF1c hi\u1EC7n \u0111\u1ED9\
+    ng t\xE1c nh\u01B0 \u0111ang giao ph\u1ED1i v\u1EDBi con c\xE1i v\u1EADy, n\xF3\
+    \ \u0111\u1EC3 l\u1ED9 b\u1ED9 ph\u1EADn sinh d\u1EE5c ra ngo\xE0i, ko bi\u1EBF\
+    t m\xE8o m\xECnh \u0111\xE3 \u0111\u1EE7 tu\u1ED5i \u0111i tri\u1EC7t s\u1EA3\
+    n ch\u01B0a \u1EA1, c\xE1m \u01A1n"
+  intent: ask/33
+- examples: "Petmart \u01A1i cho em h\u1ECFi ch\xF3 nh\xE0 em \u0103n ph\u1EA3i thu\u1ED1\
+    c di\u1EC7t chu\u1ED9t. N\xF4n ra ch\u1EA5t l\u1ECFng m\xE0u xanh. Sau m\u1EA5\
+    y ng\xE0y ti\xEAm thu\u1ED1c b\u1ED5 r\u1ED3i m\xE0 n\xF3 ko c\xF3 ti\u1EBFn tri\u1EC3\
+    n ng\u01B0\u1EE3c l\u1EA1i ng\xE0y c\xE0ng t\u1ED3i \u0111i. B\xE2y gi\u1EDD ch\xF3\
+    \ nh\xE0 em \u0111ang kh\xF3 th\u1EDF n\u1EEFa \u1EA1. Xin cho em l\u1EDDi khuy\xEA\
+    n v\u1EDBi \u1EA1."
+  intent: ask/34
+- examples: "C\xFAn con nh\xE0 em \u0111\u01B0\u1EE3c v\xE0i ng\xE0y tu\u1ED5i do\
+    \ m\u1EA5t m\u1EB9 n\xEAn em ph\u1EA3i ch\u0103m s\xF3c. Kh\xF4ng bi\u1EBFt v\xEC\
+    \ sao m\xE0 2 h\xF4m nay m\u1EAFt c\xFAn b\u1ECB s\u01B0ng \u0111\u1ECF v\xE0\
+    \ c\xF3 m\u1EE7. C\xF3 c\xE1ch n\xE0o tr\u1ECB kh\u1ECFi kh\xF4ng \u1EA1. Em s\u1EE3\
+    \ sau n\xE0y m\u1EAFt b\xE9 kh\xF4ng m\u1EDF ra \u0111c."
+  intent: ask/35
+- examples: "Ch\xFA ch\xF3 nh\xE0 m\xECnh \u0111c t\xE2\u0300m 5 th\xE1ng tu\xF4\u0309\
+    i, tu\xE2\u0300n tr\u01B0\u01A1\u0301c b\xE9 b\xF4\u0303ng n\xF4n ra b\u1ECDt\
+    \ tr\u0103\u0301ng, n\xF4n kh\xE1 nhi\xEA\u0300u t\xE2\u0300m 1 ti\xEA\u0301ng\
+    \ th\xEC h\xEA\u0301t, b\xE9 ch\xE9p mi\xEA\u0323ng l\xE0 c\u01B0\u0301 ra b\u1ECD\
+    t tr\u0103\u0301ng .. kh\xF4ng bi\xEA\u0301t \u0111\xF3 \u0111\xF3 l\xE0 d\xE2\
+    \u0301u hi\xEA\u0323u b\xEA\u0323nh g\xEC, c\xF3 nguy hi\xEA\u0309m kh\xF4ng \u1EA1\
+    ?? Em ca\u0309m \u01A1n"
+  intent: ask/36
+- examples: "Ch\xE0o petmart! Cho em h\u1ECFi l\xE0 m\xECnh c\xF3 th\u1EC3 nu\xF4\
+    i nhi\u1EC1u gi\u1ED1ng ch\xF3 kh\xE1c gi\u1EDBi t\xEDnh \u1EDF chung v\u1EDB\
+    i nhau kh\xF4ng? Nu\xF4i ch\xF3, m\xE8o, kh\u1EC9 \u1EDF chung v\u1EDBi nhau kh\xF4\
+    ng? V\u1EDBi l\u1EA1i, cho em h\u1ECFi l\xE0 m\xECnh c\xF3 v\u1EA5n cho kh\u1EC9\
+    \ kh\xF4ng? N\u1EBFu c\xF3 th\xEC cho em h\u1ECFi kh\u1EC9 t\u1EEB nh\u1ECF \u0111\
+    \u1EBFn l\u1EDBn c\xF3 c\u1EA7n ti\xEAm ph\xF2ng b\u1EC7nh g\xEC kh\xF4ng? C\u1EA3\
+    m \u01A1n!"
+  intent: ask/37
+- examples: "Em c\xF3 nu\xF4i m\u1ED9t b\xE9 c\xFAn Cocker lai Poodle (Cockapoo) \u0111\
+    \u01B0\u1EE3c 10 th\xE1ng tu\u1ED5i r\u1ED3i \u1EA1. B\xE9 nh\xE0 em kho\u1EA3\
+    ng \u0111\u1EE3t tr\u01B0\u1EDBc khi d\u1ECBch Covid th\xEC b\xE9 hay x\xEDch\
+    \ v\xEC kh\xF4ng ai \u1EDF nh\xE0, nh\u01B0ng \u0111\u1EE3t ngh\u1EC9 d\u1ECB\
+    ch n\xE0y \u0111c ngh\u1EC9 n\xEAn \u0111\u01B0\u1EE3c th\u1EA3 ra \u0111\u1EBF\
+    n gi\u1EDD \u0103n c\u01A1m th\xEC b\xE9 hay nh\u1EA3y l\xEAn xin \u0103n n\xEA\
+    n m\u1ECDi ng\u01B0\u1EDDi hay cho b\xE9 \u0103n v\u1EB7t th\u1ECBt c\xE1 \u1EDF\
+    \ tr\xEAn m\xE2m, l\xE2u d\u1EA7n th\xEC cho c\u01A1m th\u1ECBt trong khay b\xE9\
+    \ kh\xF4ng \u0103n n\u1EEFa. M\u1EA5y h\xF4m nay em l\u1EA1i th\u1EED x\xEDch\
+    \ b\xE9 v\u1EDBi khay \u0111\u1ED3 \u0103n \u1EDF c\u1EA1nh nh\u01B0ng b\xE9 c\u0169\
+    ng kh\xF4ng \u0111\u1ED9ng \u0111\u1EBFn. S\xE1ng th\xEC m\u1EB9 \u0111\u1ED5\
+    \ h\u1EA1t c\xF3 h\xF4m \u0103n h\xF4m kh\xF4ng \u0103n. Cho em h\u1ECFi t\u01B0\
+    \ v\u1EA5n v\u1EC1 nguy\xEAn nh\xE2n v\xE0 c\xE1ch kh\u1EAFc ph\u1EE5c \u0111\u01B0\
+    \u1EE3c kh\xF4ng \u1EA1?"
+  intent: ask/38
+- examples: "Cho m\xECnh h\u1ECFi m\xE8o nh\xE0 m\xECnh c\xF3 d\u1EA5u hi\u1EC7u b\u1ECF\
+    \ \u0103n, l\xF4ng x\xF9 kh\xF4ng \u0111\u01B0\u1EE3c m\u01B0\u1EE3t v\xE0 ng\u1EE7\
+    \ nhi\u1EC1u, d\u1EA5u hi\u1EC7u m\u1EC7t m\u1ECFi. Xin h\u1ECFi l\xE0 b\xE9 b\u1ECB\
+    \ b\u1EC7nh g\xEC v\xE0 c\xE1ch ch\u1EEFa nh\u01B0 th\u1EBF n\xE0o \u1EA1. M\xEC\
+    nh c\u1EA3m \u01A1n."
+  intent: ask/39
+- examples: "Pet Mart \u01A1i m\xE8o nh\xE0 em b\u1ECB nhi\u1EC5m khu\u1EA9n chlamydia\
+    \ th\xEC cho u\u1ED1ng thu\u1ED1c g\xEC v\xE0 li\u1EC1u d\xF9ng nh\u01B0 th\u1EBF\
+    \ n\xE0o \u1EA1?"
+  intent: ask/40
+- examples: "Pet Mart \u01A1i, ch\xF3 nh\xE0 m\xECnh b\u1ECB s\u1EEFa t\u1EAFm cho\
+    \ ch\xF3 v\xE0o m\u1EAFt b\xE2y gi\u1EDD ch\u1EC9 c\xF3 1 b\xEAn m\u1EDF \u0111\
+    \u01B0\u1EE3c th\xEC ph\u1EA3i l\xE0m sao \u1EA1?"
+  intent: ask/41
+- examples: "B\u1EA1n \u01A1i , m\xECnh c\xF3 nhu c\u1EA7u mua 1 b\xE9 m\xE8o ALN\
+    \ gi\u1ED1ng c\xE1i gi\xE1 6-8 tri\u1EC7u . M\xECnh mu\u1ED1n mua v\u1EC1 \u0111\
+    \u1EC3 m\xE8o \u0111\u1EBB v\xE0 b\xE1n ( b\u1EDFi v\xEC m\xE8o ALN c\xF3 gi\xE1\
+    \ tr\u1ECB cao ) , nh\u01B0ng m\xECnh kh\xF4ng mu\u1ED1n mua th\xEAm 1 b\xE9 m\xE8\
+    o ALN gi\u1ED1ng \u0111\u1EF1c b\u1EDFi v\xEC m\xECnh kh\xF4ng \u0111\u1EE7 ti\u1EC1\
+    n v\xE0 kh\xF4ng c\xF3 kh\u1EA3 n\u0103ng nu\xF4i d\u01B0\u1EE1ng th\xEAm 1 b\xE9\
+    \ m\xE8o , v\u1EADy n\u1EBFu m\xECnh mu\u1ED1n b\xE9 m\xE8o ALN gi\u1ED1ng c\xE1\
+    i c\u1EE7a m\xECnh \u0111\u01B0\u1EE3c \u0111\u1EBB th\xEAm 1 b\u1EA7y m\xE8o\
+    \ ALN \u0111\u1EC3 b\xE1n th\xEC m\xECnh c\u1EA7n \u0111\u1EBFn c\xE1c tr\u1EA1\
+    i ph\u1ED1i gi\u1ED1ng ch\xF3 m\xE8o \u0111\u1EC3 ph\u1ED1i gi\u1ED1ng \u0111\xFA\
+    ng kh\xF4ng \u1EA1 ???"
+  intent: ask/42
+- examples: "Ch\xE1u l\u1EE1 cho c\xFAn con u\u1ED1ng s\u1EEFa, gi\u1EDD c\xFAn b\u1ECB\
+    \ ti\xEAu ch\u1EA3y th\xEC c\xF3 l\xE0m sao kh\xF4ng \u1EA1?"
+  intent: ask/43
+- examples: "Ch\xF3 c\u1EE7a m\xECnh \u0111\xEAm c\xE0o l\u1ED3ng tho\xE1t ra ngh\u1ECB\
+    ch ng\u1EE3m r\u1ED3i g\xE3y ch\xE2n b\xE2y gi\u1EDD m\xECnh kh\xF4ng c\xF3 s\u1EB5\
+    n thanh g\u1ED7 n\xEAn s\u01A1 c\u1EE9u nh\u01B0 th\u1EBF n\xE0o \u0111\u1EC3\
+    \ h\u1EBFt \u0111\xEAm nay ch\xF3 \u0111\u01B0\u1EE3c an to\xE0n \u1EA1"
+  intent: ask/44
+- examples: "Ch\xF3 nh\xE0 em \u0111\u01B0\u1EE3c 3 n\u0103m tu\u1ED5i, 2 h\xF4m nay\
+    \ em n\xF3 b\u1ECB ti\xEAu ch\u1EA3y kho\u1EA3ng 3 4 l\u1EA7n 1 ng\xE0y, em kh\xF4\
+    ng n\xF4n \xF3i, ph\xE2n l\u1ECFng m\xE0u v\xE0ng c\xF3 l\u1EABn \xEDt nh\u1EA7\
+    y th\xEC c\xF3 th\u1EC3 b\u1ECB g\xEC \u1EA1. Mong c\xE1c b\xE1c s\u0129 t\u01B0\
+    \ v\u1EA5n."
+  intent: ask/45
+- examples: "Pet Mart \u01A1i, \u1EDF b\xEAn b\u1EA1n c\xF3 spa cho chu\u1ED9t kh\xF4\
+    ng?"
+  intent: ask/46
+- examples: Hi team of Pet Mart, Hope this message finds you well , this is Bale from
+    Purrpy. We are vendor of pet carriers/ pet backpack from China. Could you please
+    help to advise the mailbox of your purchasing department? We will recommend our
+    top rated product for them evaluation. Thank you!
+  intent: ask/47
+- examples: "C\u1EEDa h\xE0ng c\xF3 s\u1EA3n ph\u1EA9m tr\u1ECB cao r\u0103ng cho\
+    \ ch\xF3 m\xE8o t\u1EA1i nh\xE0 h\xF4ng \u1EA1 ?"
+  intent: ask/48
+- examples: "B\xECnh x\u1ECBt hantox c\xF3 \u0111\u1ED9c cho m\xE8o kh\xF4ng \u1EA1\
+    ? C\xF3 n\xEAn x\u1ECBt to\xE0n th\xE2n m\xE8o kh\xF4ng b\xE1c s\u0129?"
+  intent: ask/49
+- examples: "Cho m\xECnh h\u1ECFi c\xF3 th\u1EC3 ti\xEAm ng\u1EEBa tr\u01B0\u1EDB\
+    c 1 ng\xE0y so v\u1EDBi ng\xE0y b\xE1c s\u0129 \u0111\xE3 h\u1EB9n kh\xF4ng?"
+  intent: ask/50
