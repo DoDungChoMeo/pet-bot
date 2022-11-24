@@ -306,3 +306,12 @@ t=2022-11-11T09:46:32+0700 lvl=info msg="tunnel session started" obj=tunnels.ses
 t=2022-11-11T09:46:32+0700 lvl=info msg="client session established" obj=csess id=215aa5e7c01c
 t=2022-11-11T09:46:32+0700 lvl=info msg="started tunnel" obj=tunnels name=rasa_actions addr=http://localhost:5055 url=https://fd5b-2001-ee0-5423-2370-5554-205c-c80b-85cf.ap.ngrok.io
 t=2022-11-11T09:46:32+0700 lvl=info msg="started tunnel" obj=tunnels name=rasa_server addr=http://localhost:5005 url=https://ca39-2001-ee0-5423-2370-5554-205c-c80b-85cf.ap.ngrok.io
+t=2022-11-23T13:03:32+0700 lvl=info msg="starting web service" obj=web addr=127.0.0.1:4040
+t=2022-11-23T13:03:32+0700 lvl=info msg="tunnel session started" obj=tunnels.session
+t=2022-11-23T13:03:32+0700 lvl=info msg="client session established" obj=csess id=7ef8f65582c2
+t=2022-11-23T13:03:32+0700 lvl=info msg="started tunnel" obj=tunnels name=rasa_actions addr=http://localhost:5055 url=https://8958-2001-ee0-5423-2370-4db7-461b-c7ea-4ceb.ap.ngrok.io
+t=2022-11-23T13:03:32+0700 lvl=info msg="started tunnel" obj=tunnels name=rasa_server addr=http://localhost:5005 url=https://030e-2001-ee0-5423-2370-4db7-461b-c7ea-4ceb.ap.ngrok.io
+t=2022-11-23T13:03:52+0700 lvl=info msg="Got quit command" obj=consoleui
+t=2022-11-23T13:03:52+0700 lvl=info msg="received stop request" obj=app stopReq="{err:<nil> restart:false}"
+t=2022-11-23T13:03:52+0700 lvl=info msg="session closing" obj=tunnels.session err=nil
+t=2022-11-23T13:03:52+0700 lvl=info msg="accept failed" obj=csess id=7ef8f65582c2 err="reconnecting session closed"

@@ -11,7 +11,7 @@
 # https://rasa.com/docs/rasa/custom-actions
 
 action_endpoint:
-  url: "https://5c60-2001-ee0-5423-2370-5554-205c-c80b-85cf.ap.ngrok.io/webhook"
+  url: "https://5d50-2001-ee0-5423-2370-814d-9b1e-3cac-9fea.ap.ngrok.io/webhook"
 
 # Tracker store which is used to store the conversations.
 # By default the conversations are stored in memory.
