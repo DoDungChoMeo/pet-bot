@@ -1,10 +1,10 @@
 import yaml
-import json 
+import json
 
-with open("petmart_ask_answer_data.json", "r") as file:
+with open("petmart_ask_answer_data.json", "r", encoding='utf-8') as file:
   data = json.load(file)
 
-def formatRasaData(jsonData):
+def write_to_yaml(jsonData):
   intents = []
   utter_intents = []
   i = 1
@@ -12,15 +12,20 @@ def formatRasaData(jsonData):
 
     # print(dialog['ask'])
     # print(dialog['answer'])
-    intents.append({ "examples": dialog['ask'], "intent": f"ask/{i}"})
+    intents.append({ "examples": dialog['ask'], "antent": f"pet_faq/{i}"})
+    utter_intents.append({ f"utter_pet_faq/{i}": {"text": dialog['answer']}})
     i += 1
-    # break
-  print(intents)
-  with open(r'petmart_ask_answer_data.yaml', 'w') as file:
+    if i == 10:
+      break
+  
+  with open(r'petmart_faq_intents.yaml', 'w', encoding="utf-8") as file:
     documents = yaml.dump(intents, file)
 
+  with open(r'petmart_faq_utter_intents.yaml', 'w') as file:
+    documents = yaml.dump(utter_intents, file)
 
-formatRasaData(data)
+
+write_to_yaml(data)
 
 
 

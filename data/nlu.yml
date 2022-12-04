@@ -1,6 +1,10 @@
 version: '3.1'
 
 nlu:
+  - intent: fb_greet
+    examples: |
+      - Có ai chat được bây giờ không?
+      
   - intent: greet
     examples: |
       - hi
@@ -61,8 +65,8 @@ nlu:
       - bạn là ai vậy
       - ai đang trả lời vậy
       - tôi đang nói chuyện với ai vậy
-  
-# hỏi tư vấn sản phẩm
+
+  # hỏi tư vấn sản phẩm
   - intent: tu_van_san_pham
     examples: |
       - tư vấn về các sản phẩm
@@ -83,29 +87,29 @@ nlu:
       - cho mình xem danh mục các sản phẩm đang được bày bán
       - cho tôi xem danh mục các sản phẩm đang được bày bán
       - cho tui xem danh mục các sản phẩm đang được bày bán
-      
+
   - intent: chon_danh_muc
     examples: |
-      - [đồ dùng cho chó](category)
-      - [do dung cho cho]{"entity": "category", "value": "đồ dùng cho chó"}
-      - [đồ dùng cho mèo](category)
-      - [do dung cho meo]{"entity": "category", "value": "đồ dùng cho mèo"}
-      - [thức ăn cho chó](category)
-      - [thuc an cho cho]{"entity": "category", "value": "thức ăn cho chó"}
-      - [thức ăn cho mèo](category)
-      - [thuc an cho meo]{"entity": "category", "value": "thức ăn cho mèo"}
-      - [bánh thưởng cho chó](category)
-      - [banh thuong cho cho]{"entity": "category", "value": "bánh thưởng cho chó"}
-      - [bánh thưởng cho mèo](category)
-      - [banh thuong cho meo]{"entity": "category", "value": "bánh thưởng cho mèo"}
-      - [pate cho chó](category)
-      - [pate cho cho]{"entity": "category", "value": "pate cho chó"}
-      - [pate cho mèo](category)
-      - [pate cho meo]{"entity": "category", "value": "pate cho mèo"}
-      - [dinh dưỡng cho chó](category)
-      - [dinh duong cho cho]{"entity": "category", "value": "dinh dưỡng cho chó"}
-      - [dinh dưỡng cho mèo](category)
-      - [dinh duong cho meo]{"entity": "category", "value": "dinh dưỡng cho mèo"}
+      - danh mục [đồ dùng cho chó](category)
+      - danh mục [do dung cho cho]{"entity": "category", "value": "đồ dùng cho chó"}
+      - danh mục [đồ dùng cho mèo](category)
+      - danh mục [do dung cho meo]{"entity": "category", "value": "đồ dùng cho mèo"}
+      - danh mục [thức ăn cho chó](category)
+      - danh mục [thuc an cho cho]{"entity": "category", "value": "thức ăn cho chó"}
+      - danh mục [thức ăn cho mèo](category)
+      - danh mục [thuc an cho meo]{"entity": "category", "value": "thức ăn cho mèo"}
+      - danh mục [bánh thưởng cho chó](category)
+      - danh mục [banh thuong cho cho]{"entity": "category", "value": "bánh thưởng cho chó"}
+      - danh mục [bánh thưởng cho mèo](category)
+      - danh mục [banh thuong cho meo]{"entity": "category", "value": "bánh thưởng cho mèo"}
+      - danh mục [pate cho chó](category)
+      - danh mục [pate cho cho]{"entity": "category", "value": "pate cho chó"}
+      - danh mục [pate cho mèo](category)
+      - danh mục [pate cho meo]{"entity": "category", "value": "pate cho mèo"}
+      - danh mục [dinh dưỡng cho chó](category)
+      - danh mục [dinh duong cho cho]{"entity": "category", "value": "dinh dưỡng cho chó"}
+      - danh mục [dinh dưỡng cho mèo](category)
+      - danh mục [dinh duong cho meo]{"entity": "category", "value": "dinh dưỡng cho mèo"}
 
   - intent: xem_nhan_hieu
     examples: |
@@ -125,13 +129,13 @@ nlu:
 
   - intent: chon_nhan_hieu
     examples: |
-      - [CIAO](brand)
-      - [INABA](brand)
-      - [IRIS OHYAMA](brand)
-      - [JERHIGH](brand)
-      - [NUTRABONE](brand)
-      - [PEDIGREE](brand)
-      - [VEGEBRAND](brand)
+      - nhãn hiệu [CIAO](brand)
+      - nhãn hiệu [INABA](brand)
+      - nhãn hiệu [IRIS OHYAMA](brand)
+      - nhãn hiệu [JERHIGH](brand)
+      - nhãn hiệu [NUTRABONE](brand)
+      - nhãn hiệu [PEDIGREE](brand)
+      - nhãn hiệu [VEGEBRAND](brand)
 
   - intent: tim_kiem_san_pham
     examples: |
@@ -141,9 +145,8 @@ nlu:
 
   # - intent: xem_san_pham_theo_danh_muc
   #   examples: |
-      
 
-# hỏi tư vấn chăm sóc thú cưng
+  # hỏi tư vấn chăm sóc thú cưng
   - intent: tu_van_cham_soc
     examples: |
       - tư vấn chăm sóc
@@ -152,11 +155,147 @@ nlu:
       - tôi muốn được tư vấn về cách chăm sóc thú cưng
       - mình muốn được tư vấn về cách chăm sóc thú cưng
 
-  - intent: faq/0
+  - intent: faq/ask_name
     examples: |
       - bạn tên gì
       - tên của bạn là gì
-  - intent: faq/1
+  - intent: faq/ask_creator
+    examples: |
+      - ai đã tạo ra bạn
+  - intent: faq/ask_age
     examples: |
       - bạn bao nhiêu tuổi
       - tuổi của bạn là bao nhiêu
+
+# Các câu hỏi thường gặp về chăm sóc thú cưng
+  - intent: faq/cham_soc_1
+    examples: |
+      - nên cho mèo đi tiêm phòng bao lâu một lần
+
+  - intent: faq/cham_soc_2
+    examples: |
+      - mèo bị tiêu chảy phải làm sao
+
+  - intent: faq/cham_soc_3
+    examples: |
+      - quên mang sổ tiêm phải làm sao
+
+  - intent: faq/cham_soc_4
+    examples: |
+      - chó ăn chuông lắc trên vòng đeo cổ phải làm sao
+
+  - intent: faq/cham_soc_5
+    examples: |
+      - chó bị sái quai hàm phải làm sao
+
+  - intent: faq/cham_soc_6
+    examples: |
+      - chó nhà em bị sảy thai. có cách nào giúp nó bình tĩnh lại không ạ?
+
+  - intent: faq/cham_soc_7
+    examples: |
+      - chó bị tê liệt cột sống
+
+  - intent: faq/cham_soc_8
+    examples: |
+      - cún mắt mở không lên
+      - chó mắt mở không lên
+
+  - intent: faq/cham_soc_9
+    examples: |
+      - hamster 1 tuần tuổi của em bị kiến cắn ở tay bị sưng thì không biết là nên làm gì
+      - hamster của em bị kiến cắn ở tay bị sưng thì không biết là nên làm gì
+
+  - intent: faq/cham_soc_10
+    examples: |
+      - cún có biểu hiện chán chường, ngủ nhiều hơn
+      - chó ngủ nhiều
+
+  - intent: faq/cham_soc_11
+    examples: |
+      - Chó nhà em bị sưng phù rất to ở cổ
+
+  - intent: faq/cham_soc_12
+    examples: |
+      - Mình bị mèo nhà mình 2 tháng tuổi cào có cần đi tiêm không
+
+  - intent: faq/cham_soc_13
+    examples: |
+      - Chó mẹ hay nằm đè lên con thì có nên tách chó mẹ với chó con ra riêng không ạ
+
+  - intent: faq/cham_soc_14
+    examples: |
+      - Em có mua thuốc nhỏ gáy bên mình và có nhỏ cho bé mèo nhà em, thì bé biểu hiện gãi nhiều hơn bình thường liệu có sao không ạ?
+
+  - intent: faq/cham_soc_15
+    examples: |
+      - khi mua đồ cho chó mèo ở Petfriends thì mình có cần mang chú chó đến cửa hàng để tư vấn mua đồ không?
+
+  - intent: faq/cham_soc_16
+    examples: |
+      - chân cún nhà mình bị sưng tím phù lên thì có cách nào chữa trị không ạ?
+      - chân chó nhà em bị sưng
+
+  - intent: faq/cham_soc_17
+    examples: |
+      - chó nhà em tầm 4 tháng tuổi, bị cắt ria mép nên nó buồn
+      - chó nhà em bị cắt ria mép nên nó buồn
+
+  - intent: faq/cham_soc_18
+    examples: |
+      - cho em hỏi mèo nhà em sinh con được tầm hơn 1 tháng, mèo con đã biết ăn chút ít, em thấy bụng mèo mẹ phần bầu sữa bị cứng
+
+  - intent: faq/cham_soc_20
+    examples: |
+      - tôi có thể bị nhiễm virus Corona viêm phổi cấp từ thú cưng của mình hoặc các động vật khác không?
+
+  - intent: faq/cham_soc_21
+    examples: |
+      - chó của em mỗi khi tắm bé trở nên rất dữ,
+
+
+  - intent: faq/cham_soc_23
+    examples: |
+      - chó nhà em  thỉnh thoảng cứ hay bị nôn, nôn ra cả thức ăn. Thỉnh thoảng bọt trắng, bọt vàng.
+
+  - intent: faq/cham_soc_24
+    examples: |
+      - chó em mới đẻ mà chó con trên bụng nổi hột nhỏ nhỏ xong khô thì đen lại
+
+  - intent: faq/cham_soc_26
+    examples: |
+      - con mèo nhà con nó mới được 23 ngày tuổi nó bị tiêu chảy
+
+  - intent: faq/cham_soc_27
+    examples: |
+      - Pet Friends có bán vật nuôi không ạ
+
+  - intent: faq/cham_soc_28
+    examples: |
+      - chó cái đang đợt động dục mà để xổng mất để nó quan hệ với chó đực tầm 30s thì mình ngăn lại vậy thì có tỉ lệ dính bầu không ạ
+
+  - intent: faq/cham_soc_29
+    examples: |
+      - mèo nhà em hôm qua đẻ một con xong nó không đẻ nữa bụng vẫn còn to ạ đẻ xong ăn uống vẫn bình thường ạ có phải nó đẻ sót con không ạ?
+
+  - intent: faq/cham_soc_30
+    examples: |
+      - chó nhà em ăn phải thuốc diệt chuột
+
+  - intent: faq/cham_soc_31
+    examples: |
+      - vì sao mèo của tôi không thích âu yếm
+
+  - intent: faq/cham_soc_32
+    examples: |
+      - triệt sản mèo có khiến chúng tăng cân
+
+  - intent: faq/cham_soc_33
+    examples: |
+      - vì sao mèo lớn tuổi lại uống nhiều nước
+
+  - intent: faq/cham_soc_34
+    examples: |
+      - mắt cún bị sưng đỏ và có mủ
+
+  

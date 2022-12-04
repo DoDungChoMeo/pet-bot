@@ -1,6 +1,7 @@
 version: '3.1'
 
 intents:
+  - fb_greet
   - greet
   - goodbye
   - affirm
@@ -13,7 +14,7 @@ intents:
   - tim_kiem_san_pham
   - chon_danh_muc
   - chon_nhan_hieu
-
+  
 actions:
   - action_categories
   - action_brands
@@ -68,15 +69,15 @@ responses:
 
   utter_iamabot:
     - text: |
-        Em là trợ lý ảo của Pet Friends. Em có thể tư vấn cho quý khách về lựa chọn sản phẩm và cách chăm sóc thú cưng. 
+        Em là trợ lý ảo của Pet Friends. Em có thể tư vấn cho quý khách về lựa chọn sản phẩm và cách chăm sóc thú cưng.
         
         Rất hân hạnh được phục vụ quý khách.
 
-  utter_please_rephrase:
+  utter_nlu_fallback:
   - text: |
-        Xin lỗi, em vẫn chưa hiểu ý định của quý khách.
+        Xin lỗi, câu hỏi này nằm ngoài hiểu biết của em.
 
-        Quý khách vui lòng đặt lại câu hỏi.
+        Anh chị vui lòng hỏi lại câu khác.
 
 # Kịch bản chính cho chatbot bán đồ dùng cho thú cưng
   utter_tu_van_san_pham:
@@ -99,18 +100,153 @@ responses:
 
   utter_tu_van_cham_soc:
     - text: |
-        Quý khách có thể đặt các câu hỏi liên quan đến cho mèo ví dụ như: 
-        - Cách chăm sóc chó con mới sinh?
-        - Mèo Anh lông ngắn có thay lông không?
+        Chào quý khách, quý khách có thể đặt các câu hỏi liên quan đến chó mèo ví dụ như: 
+        - Chó ăn chuông lắc trên vòng đeo cổ phải làm sao?
+        - Nên cho mèo đi tiêm phòng bao lâu một lần?
+        - Triệt sản mèo có khiến chúng tăng cân?
 
-  utter_faq/0:
+  utter_faq/ask_name:
     - text: |
-        Tôi tên là Đức
-  utter_faq/1:
+        Tôi tên là Petbot
+  utter_faq/ask_creator:
+    - text: |
+        Tôi được tạo ra bởi một lập trình viên tên là Tommy Tran
+  utter_faq/ask_age:
    - text: |
-        Năm nay 18 tuổi
+        Tôi không nhớ chính xác mình bao nhiêu tuổi
 
+# Các câu trả lời tương ứng với các câu hỏi
+  utter_faq/cham_soc_1:
+    - text: |
+        anh chị nên cho bé đi tiêm phòng đầy đủ và định kỳ 1 năm 1 lần nhé        
 
+  utter_faq/cham_soc_2:
+    - text: |
+        Anh chị nên xem lại vấn đề ăn của bé. Cụ thể là đồ dùng ăn uống có vệ sinh sạch sẽ không? Cung cấp nước sạch, không dùng nước máy. 
+
+        Anh chị xem thức ăn hạt cho mèo là loại gì, của hãng nào? Trước đó có dùng loại này không? Nếu là loại mới thì nên dừng lại. Còn nếu vẫn là loại cũ thì kiểm tra Hạn sử dụng hoặc bảo quản hạt.
+
+        Mua men tiêu hóa Enterogermina cho mèo uống 1 ngày 2 ống (sau hoặc trước ăn) để cải thiện lại hệ tiêu hóa và đường ruột. Nếu mèo ăn được cháo thịt, thì nên chuyển cho ăn cháo loãng ít hôm. Nếu sau vài ngày ăn như vậy + uống men tiêu hóa mà đi phân bình thường trở lại tức là vấn đề của mèo đang gặp phải là ở Điều số 2 kể trên. Còn nếu vẫn tiếp tục tiêu chảy anh chị cần cho mèo đến thú y để test phân xem đang gặp phải vấn đề gì để có phác đồ điều trị sớm nhé! 
+
+  utter_faq/cham_soc_3:
+    - text: |
+        Chào anh chị, về nguyên tắc mỗi ống vacxin sau khi tiêm xong sẽ đều có 1 cái tem đi kèm. Tem đó để sử dụng dán vào sổ sức khỏe của bé để tự nhắc mình lưu trữ thời gian tiêm phòng của bé. Nếu trong trường hợp anh chị không mang theo sổ thì bác sĩ vẫn phải cung cấp vỏ ống tiêm và tem cho anh chị để anh chị có thể tự đem về và dán vào sổ sức khỏe của bé. Bản chất của việc này chủ yếu là để nhắc nhở mình lưu trữ thời gian tiêm của bé để sau ngày tiêm nhắc lại thôi. Nên anh chị hoàn toàn có thể quay lại đó yêu cầu người ta trả lại tem dán tiêm vacxin cho anh chị nhé, hoặc anh chị chỉ cần ghi vào trong sổ ngày tiêm của bé mà không cần tem đó. Ghi lại tên của vacxin vào phần tem dán là được.
+
+  utter_faq/cham_soc_4:
+    - text: |
+        Chào anh chị, anh chị cần kiểm tra phân của bé mỗi khi bé đi nặng, nếu trong khoảng 2 ngày mà bé không đẩy lục lạc qua đường phân thì anh chị cần phải đưa bé đến ngay thú y để mổ và đưa dị vật ra khỏi dạ dày của bé nếu không sẽ rất nguy hiểm.
+
+  utter_faq/cham_soc_5:
+    - text: |
+        Chào anh chị, ca này anh chị phải đưa bé đến các trung tâm thú y, nơi nào chuyên về chỉnh hình mới có thể xử lý được. Nhẹ thì có thể nắn chỉnh thông thường, nhưng nặng hoặc nếu cún bị bẩm sinh thì có thể phải phẫu thuật chỉnh hàm.
+
+  utter_faq/cham_soc_6:
+    - text: |
+        Chào anh chị, bé cún của anh chị vừa trải qua 1 cú sốc lớn nên tâm lý ít nhiều cũng bị ảnh hưởng. Chưa kể thời gian mang thai bé đã rất mệt rồi, sau đó bị sảy thai thì khiến cho sức khỏe và tinh thần mệt mỏi hơn.
+        
+        Điều cần làm bây giờ phải đảm bảo thai lưu trong bụng bé đã được lấy ra hết. Cho bé uống nước rau ngót ép để đào thải nhau thai ra ngoài. Ngoài ra, để cho bé có một không gian yên tĩnh, riêng tư. Khi nào bé có nhu cầu kết giao, gần gũi với chủ bé sẽ chủ động. Nếu bé thích ăn một món gì đó, anh chị hãy mua cho bé ăn hàng ngày để kết nối lại tình cảm và sự quan tâm dành cho bé.
+
+  utter_faq/cham_soc_7:
+    - text: |
+        Chào anh chị, tất cả các vấn đề liên quan đến xương, khớp đều cần phải được thực hiện chụp X-quang để phỏng đoán thực tế tình trạng của vật nuôi. Nếu không chụp X-Quang thì không thể đưa ra phác đồ điều trị 1 cách phù hợp và hiệu quả. anh chị cố gắng sắp xếp thời gian đưa bé đến phòng khám thú y để chụp và kiểm tra càng sớm càng tốt nhé!
+
+  utter_faq/cham_soc_8:
+    - text: |
+        Chào anh chị, cụ thể bé cún nhà anh chị được bao nhiêu tuổi rồi? Nếu là cún già, thì anh chị sẽ cần phải tìm hiểu các bài viết về chế độ chăm sóc đặc biệt dành cho chó già. Còn nếu cún của anh chị là cún con hoặc đang trưởng thành anh chị có thể ra hiệu thuốc mua nước muối sinh lý NaCl 0,9% để nhỏ mắt cho bé và theo dõi trong khoảng 3 ngày. Nếu sau 3 ngày các triệu chứng giảm / đỡ hãy tiếp tục duy trì.
+        
+        Còn nếu không đỡ, anh chị cần phải đưa bé đến thú y để kiểm tra ngay.  
+
+  utter_faq/cham_soc_9:
+    - text: |  
+        Chào anh chị, hamster bị kiến cắn không gây nguy hiểm hay ảnh hưởng gì anh chị nhé. Cũng giống như con người, anh chị chỉ cần vệ sinh vết kiến cắn bằng dung dịch sát trùng Betadine bé sẽ tự khỏi sau vài ngày.
+
+  utter_faq/cham_soc_10:
+    - text: |  
+        Chào anh chị, việc cún ngủ nhiều không phải là yếu tố thể hiện rằng sức khỏe của cún bất thường anh chị nhé. Ngược lại, việc cún ngủ nhiều là điều hết sức bình thường. Có thể bé đã trải qua nhiều sự cố về tâm lý dẫn đến cơ thể và tinh thần mỏi mệt nên việc ngủ sẽ giúp cún hồi lại thể trạng và tinh thần. Thông thường các bé đi lạc đều sẽ có cảm giác bị sốc và sợ hãi nên việc giật mình là chuyện không lạ. Những biểu hiện về cảm xúc này sẽ dần dần tự hết khi nhận được đầy đủ sự yêu thương và chăm sóc từ gia đình. anh chị yên tâm nhé!
+
+  utter_faq/cham_soc_11:
+    - text: |  
+        anh chị cần đưa bé đến cơ sở thú y có cung cấp dịch vụ siêu âm, chụp xquang để tiến hành kiểm tra thực tế. Dựa vào đó các bác sĩ sẽ đánh giá bệnh của bé và đề xuất phác đồ điều trị tốt nhất.
+
+  utter_faq/cham_soc_12:
+    - text: |  
+        Chào anh chị, mèo 2 tháng tuổi nguy cơ dại rất thấp nên anh chị không cần phải tiêm nhé. Đỏ chỉ là vết cào thông thường thôi. anh chị chỉ tiêm nếu mèo cào hoặc cắn anh chị là mèo hoang, hoặc mèo không biết ở đâu vô chủ có biểu hiện dại nha. Chứ còn mèo nhà nuôi thì không phải lo lắng gì anh chị nhé.
+
+  utter_faq/cham_soc_13:
+    - text: |  
+        Chào anh chị, anh chị nên tách ngay anh chị nhé, không phải nhất thiết lúc nào chó mẹ cũng phải nằm cạnh chó con (trừ lúc ngủ hoặc khi cho bú). Hoặc phải có người ở cạnh để trông hoặc giám sát nếu không chó mẹ nằm đè lên chó con làm chó con tắc thởng.
+
+  utter_faq/cham_soc_14:
+    - text: |  
+        Chào anh chị, anh chị có thể đánh giá hiệu quả của thuốc thông qua việc ve rận trên người bé rụng xuống và chết đi. Nếu trong trường hợp bé có nhiều rận anh chị có thể đánh giá bằng cách này. Ngoài ra thuốc không có tác dụng phụ gây ngứa ở mèo, mình có thể kiểm tra tình dạng da của bé xem có vấn đề gì không?
+
+  utter_faq/cham_soc_15:
+    - text: |  
+        Chào anh chị, để nâng cao sự trải nghiệm thực tế mình hoàn toàn có thể đưa thú cưng đến trực tiếp cửa hàng để mua sắm. Trong một vài trường hợp cụ thể như mua quần áo, chuồng, nhà, ổ đệm… thú cưng sẽ cần mặc thử, nằm thử để xem kích thước của chúng có vừa với các mẫu sản phẩm thực tế không. Ngoài ra, nếu mình chỉ mua thức ăn, sữa tắm… và các vật dụng cơ bản khác thì mình không nhất thiết phải đưa thú cưng đi lại nhiều trong thời điểm dịch bệnh Covid-19 như hiện nay.
+
+  utter_faq/cham_soc_16:
+    - text: |  
+        Chào anh chị, trường hợp này Petfriends khuyên anh chị nên đưa thú cưng đến trực tiếp phòng khám thú y để kiểm tra và chụp chiếu x-quang. Từ đó sẽ có kết luận và phác đồ điều trị phù hợp nhất cho bé.
+
+  utter_faq/cham_soc_17:
+    - text: |
+        Chào anh chị, trường hợp này Pet Friends không chắc chắn nguyên nhân có thể đến từ việc bị cắt ria mép. anh chị nên đưa bé đến phòng khám thú y để bác sĩ đánh giá trực tiếp trường hợp này của bé nhà mình nhé!  
+
+  utter_faq/cham_soc_18:
+    - text: |  
+        Chào anh chị, trường hợp bé mèo nhà mình có khả năng bị viêm tuyến sữa. anh chị nên vệ sinh bằng nước muối ấm phần bầu sữa và đầu ti của mèo để đảm bảo sữa lưu thông không bị tắc. Nếu tuyến sữa bị viêm mà mèo con bú phải cũng có thể khiến cho mèo con bị ngộ độc.
+
+  utter_faq/cham_soc_20:
+    - text: |  
+        Chào anh chị, nguy cơ thú nuôi lây lan vi rút gây COVID-19 ở người được coi là thấp. Tại thời điểm này, không có bằng chứng cho thấy động vật đóng một vai trò quan trọng trong việc lây lan vi rút gây ra COVID-19. Có một số lượng nhỏ động vật trên khắp thế giới được báo cáo là bị nhiễm vi rút gây ra COVID-19, chủ yếu là sau khi tiếp xúc gần với một người có COVID-19. Cho đến khi chúng tôi tìm hiểu thêm về cách vi rút này ảnh hưởng đến động vật, hãy đối xử với thú nuôi như anh chị đối xử với các thành viên trong gia đình con người để bảo vệ chúng khỏi khả năng lây nhiễm.
+
+  utter_faq/cham_soc_21:
+    - text: |  
+        Phần lớn các bé chó đều có xu hướng sợ độ cao. Khi tắm cho cún, anh chị hãy thử cho bé đứng lên 1 cái bàn cao (nhớ buộc dây hoặc có những biện pháp an toàn để giữ bé trên bàn nhé). Nếu cún có xu hướng cắn chủ (cắn thật không đùa) thì anh chị cũng cần phải cân nhắc về việc huấn luyện lại bé. Vì thông thường rất ít khi cún cắn lại chủ. Việc không vệ sinh tai cho cún trong thời gian dài sẽ có thể gây ra nhiều vấn đề rắc rối, ví dụ như viêm tai, thối tai. anh chị có thể cân nhắc đến phương án đưa bé đến các tiệm chăm sóc hoặc thú y để họ hỗ trợ nha!
+
+  utter_faq/cham_soc_23:
+    - text: |  
+        Chào anh chị, chó bị nôn ra bọt trắng là các biểu hiện liên quan đến có giun (anh chị kiểm tra lại thời gian tẩy giun cho bé), viêm phế quản, viêm phổi. Còn nôn ra bọt vàng thì là hệ tiêu hóa đang bị tổn thương hoặc bị viêm đường tiêu hóa. anh chị cần theo dõi, sắp xếp lại khung thời gian ăn uống của bé đúng giờ và đầy đủ để hạn chế những hiện tượng nêu trên.
+
+  utter_faq/cham_soc_24:
+    - text: |  
+        Chào anh chị, các nốt nhỏ nhỏ khô đen lại khả năng cao là do ve rận hoặc bọ chét cắn để lại các nốt đó anh chị nhé. anh chị kiểm tra xem bé nhà minh có ve rận không? Trong trường hợp nếu không có ve rận, khi tắm cho bé, anh chị cần sấy khô 100% lông của bé để tránh các vấn đề viêm da anh chị nhé.
+
+  utter_faq/cham_soc_26:
+    - text: |  
+        Chào anh chị, nếu bé mèo 23 ngày tuổi bị tiêu chảy. anh chị cần kiểm tra lại đầu vú của mèo mẹ và vệ sinh sạch sẽ đầu vú bằng nước muối sinh lý hàng ngày tránh việc vi khuẩn bám trên đầu vú mèo mẹ có thể khiến cho mèo con bị tiêu chảy. Ngoài ra, nếu anh chị đã cho mèo con uống sữa ngoài, anh chị cần mua thêm men tiêu hóa (có thể tìm hiểu men Enterogermina rất tốt) và pha cùng với sữa cho mèo con uống để không bị tiêu chảy. Lưu ý: sữa nên là sữa tươi không đường, và không nên cho mèo con uống sữa bột của trẻ em hoặc sữa đặc.
+
+  utter_faq/cham_soc_27:
+    - text: | 
+        Chào anh chị, hiện tại Pet Friends chỉ bán các đồ dùng, thức ăn cho chó mèo. Ngoài ra cung cấp các dịch vụ chăm sóc, cắt tỉa lông, trông giữ chứ không bán vật nuôi sống. Cảm ơn anh chị!
+ 
+  utter_faq/cham_soc_28:
+    - text: |  
+        Chào anh chị, 30 giây thì khả năng giao phối thành công rất thấp anh chị nhé. Quan trọng là thời điểm mà anh chị phát hiện ra, thì 2 bé chó đã quay mông dính bộ phận sinh dục vào nhau chưa? Hay chỉ đang đu người lên thôi? Và anh chị có chắc khoảng thời gian đó là 30 giây không?
+
+  utter_faq/cham_soc_29:
+    - text: |  
+        Chào anh chị, có nguy cơ là vẫn còn sót con anh chị nhé. Nếu để quá sau 6 tiếng mà vẫn không đẻ cần phải tiêm thuốc kích đẻ, nếu không thai sẽ chết lưu nguy hiểm cho mèo mẹ nha anh chị.
+
+  utter_faq/cham_soc_30:
+    - text: |  
+        Chào anh chị, trường hợp này rất nghiêm trọng. anh chị cần phải cho cún đến phòng khám thú y uy tín để có phác đồ điều trị khẩn trương. anh chị có thể tìm hiểu thêm bài viết này: Cách cấp cứu khi chó bị ngộ độc
+
+  utter_faq/cham_soc_31:
+    - text: |  
+        Có thể là do hoàn cảnh xung quanh, hoặc cách anh chị tiếp xúc với mèo khiến chúng lo lắng và muốn chống lại. Cách tiếp cận tốt nhất để chiến thắng tình cảm của một con mèo là nhẹ nhàng và đừng làm chúng hoảng sợ. Đừng nhấc, hoặc ôm ấp khi chúng thật sự đang không muốn điều đó. Hãy gọi tên chúng, sau đó từ từ đưa những ngón tay về phía mặt mèo. Nếu mèo muốn âu yếm, mèo sẽ cà vào tay của anh chị, và ý muốn được vuốt ve. Với thời gian và sự hợp tác từ tất cả các thành viên trong gia đình của anh chị, kể cả trẻ em, mèo của anh chị có thể chấp nhận tình cảm âu yếm đó. Mỗi con mèo đều có cá tính riêng của mình.
+
+  utter_faq/cham_soc_32:
+    - text: |  
+        Câu trả lời là có. Cả mèo đực và mèo cái sẽ tăng cân sau khi bị thiến hoặc bị thiến. Trung hòa và spaying sẽ làm chậm việc chuyển hoá thức ăn của mèo, và có thể tạo nên một số chất béo được phân phối lại đến các bộ phận khác của cơ thể, đặc biệt là vùng bụng, dẫn đến bụng toàn mỡ. Sau khi bị thiến, điều quan trọng là giảm lượng thức ăn cho mèo ăn và tiếp tục khuyến khích con mèo chơi và tập thể dục.
+
+  utter_faq/cham_soc_33:
+    - text: |
+        Khát nước quá mức, đi tiểu và giảm cân ở một chú mèo 15 tuổi chắc chắn là nguyên nhân gây lo lắng. Mèo già có nguy cơ cao bị rối loạn chuyển hóa như cường giáp, tiểu đường và suy thận mãn tính. May mắn thay, những rối loạn này tương đối dễ chẩn đoán thông qua xét nghiệm máu và nước tiểu đơn giản. anh chị nên đến cơ sở thú y uy tín để được các bác sĩ thú y thăm khám và điều trị cụ thể hơn.
+
+  utter_faq/cham_soc_34:
+    - text: |
+        Chào anh chị, anh chị có thể ra hiệu thuốc mua nước nhỏ mắt muối sinh lý cho trẻ em để nhỏ cho bé. Tuy nhiên, nếu mắt bé có mủ và sưng đỏ khả năng là viêm mắt rồi chứ không phải dị ứng thông thường. anh chị có thể qua Pet Mart mua thuốc trị đau mắt cho bé và nhỏ sớm càng tốt để điều trị triệt để.
 
 session_config:
   session_expiration_time: 60

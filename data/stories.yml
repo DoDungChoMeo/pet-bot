@@ -1,58 +1,22 @@
 version: '3.1'
 
 stories:
-# Sau khi chào hiển thị 2 button là tư vấn sản phẩm 
-# và tư vấn chăm sóc cho người dùng lựa chọn
-  - story: Tư vấn sản phẩm
+  - story: Tư vấn 
     steps:
       - intent: greet
-      - action: utter_welcome
-      - intent: tu_van_san_pham
-      - action: utter_tu_van_san_pham
-
-  - story: Tư vấn chăm sóc thú cưng
-    steps:
-      - intent: greet
-      - action: utter_welcome
-      - intent: tu_van_cham_soc
       - action: utter_tu_van_cham_soc
 
-# # Chọn tư vấn sản phẩm sẽ có 3 option
-# # - xem sản phẩm theo danh mục sản phẩm 
-# # - xem sản phẩm theo nhãn hàng 
-# # - tìm kiếm sản phẩm
-#   - story: |
-#       Tư vấn sản phẩm 
-#       -> Xem danh mục sản phẩm 
-#       -> Chọn danh mục sản phẩm
-#     steps:
-#       - intent: greet
-#       - action: utter_welcome
-#       - intent: tu_van_san_pham
-#       - action: utter_tu_van_san_pham
-#       - intent: xem_danh_muc
-#       - action: action_categories
-#       - intent: chon_danh_muc
-#       - action: utter_chon_danh_muc
-      
+  # - story: Tư vấn sản phẩm
+  #   steps:
+  #     - intent: greet
+  #     - action: utter_welcome
+  #     - intent: tu_van_san_pham
+  #     - action: utter_tu_van_san_pham
 
-#   - story: Tư vấn sản phẩm -> Xem danh sách nhãn hiệu
-#     steps:
-#       - intent: greet
-#       - action: utter_welcome
-#       - intent: tu_van_san_pham
-#       - action: utter_tu_van_san_pham
-#       - intent: xem_nhan_hieu
-#       - action: action_brands
-#       - intent: chon_nhan_hieu
-#       - action: utter_chon_nhan_hieu
+  # - story: Tư vấn chăm sóc thú cưng
+  #   steps:
+  #     - intent: greet
+  #     - action: utter_welcome
+  #     - intent: tu_van_cham_soc
+  #     - action: utter_tu_van_cham_soc
       
-
-#   # - story: Tư vấn sản phẩm -> Tìm kiếm sản phẩm
-#   #   steps:
-#   #     - intent: greet
-#   #     - action: utter_welcome
-#   #     - intent: tu_van_san_pham
-#   #     - action: utter_tu_van_san_pham
-#   #     - intent: tim_kiem_san_pham
-#   #     - action: action_search
