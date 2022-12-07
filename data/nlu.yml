@@ -42,21 +42,8 @@ nlu:
       - hẹn gặp lại
       - hẹn gặp lại bạn
       - chúc một ngày tốt lành
-      - bye-bye
+      - bai bai
       - bye
-
-  - intent: affirm
-    examples: |
-      - được
-      - đúng vậy
-      - dĩ nhiên
-      - ok
-
-  - intent: deny
-    examples: |
-      - không
-      - không được
-      - không bao giờ
 
   - intent: bot_challenge
     examples: |
@@ -143,17 +130,11 @@ nlu:
       - tui muốn tự tìm kiếm sản phẩm
       - tôi muốn tìm kiếm sản phẩm
 
-  # - intent: xem_san_pham_theo_danh_muc
-  #   examples: |
-
-  # hỏi tư vấn chăm sóc thú cưng
+  # Các câu hỏi thường gặp về chăm sóc thú cưng
   - intent: tu_van_cham_soc
     examples: |
       - tư vấn chăm sóc
       - cách chăm sóc thú cưng
-      - tui muốn được tư vấn về cách chăm sóc thú cưng
-      - tôi muốn được tư vấn về cách chăm sóc thú cưng
-      - mình muốn được tư vấn về cách chăm sóc thú cưng
 
   - intent: faq/ask_name
     examples: |
@@ -171,6 +152,7 @@ nlu:
   - intent: faq/cham_soc_1
     examples: |
       - nên cho mèo đi tiêm phòng bao lâu một lần
+      - bao lâu thì mèo nên đi tiêm phòng một lần
 
   - intent: faq/cham_soc_2
     examples: |
@@ -190,7 +172,7 @@ nlu:
 
   - intent: faq/cham_soc_6
     examples: |
-      - chó nhà em bị sảy thai. có cách nào giúp nó bình tĩnh lại không ạ?
+      - chó nhà em bị sảy thai
 
   - intent: faq/cham_soc_7
     examples: |
@@ -233,8 +215,8 @@ nlu:
 
   - intent: faq/cham_soc_16
     examples: |
-      - chân cún nhà mình bị sưng tím phù lên thì có cách nào chữa trị không ạ?
-      - chân chó nhà em bị sưng
+      - chân cún bị sưng tím phù lên thì có cách nào chữa trị không ạ?
+      - chân chó bị sưng
 
   - intent: faq/cham_soc_17
     examples: |
@@ -243,11 +225,12 @@ nlu:
 
   - intent: faq/cham_soc_18
     examples: |
-      - cho em hỏi mèo nhà em sinh con được tầm hơn 1 tháng, mèo con đã biết ăn chút ít, em thấy bụng mèo mẹ phần bầu sữa bị cứng
+      - mèo mẹ phần bầu sữa bị cứng
 
   - intent: faq/cham_soc_20
     examples: |
       - tôi có thể bị nhiễm virus Corona viêm phổi cấp từ thú cưng của mình hoặc các động vật khác không?
+      - tiếp xúc với thú nuôi nhiễm covid có làm tôi bị nhiễm covid
 
   - intent: faq/cham_soc_21
     examples: |
@@ -272,11 +255,11 @@ nlu:
 
   - intent: faq/cham_soc_28
     examples: |
-      - chó cái đang đợt động dục mà để xổng mất để nó quan hệ với chó đực tầm 30s thì mình ngăn lại vậy thì có tỉ lệ dính bầu không ạ
+      - chó cái quan hệ với chó đực tầm 30s thì có tỉ lệ dính bầu không ạ
 
   - intent: faq/cham_soc_29
     examples: |
-      - mèo nhà em hôm qua đẻ một con xong nó không đẻ nữa bụng vẫn còn to ạ đẻ xong ăn uống vẫn bình thường ạ có phải nó đẻ sót con không ạ?
+      - mèo nhà em đẻ xong nhưng bụng vẫn còn to, có phải nó đẻ sót con không ạ?
 
   - intent: faq/cham_soc_30
     examples: |
@@ -285,6 +268,7 @@ nlu:
   - intent: faq/cham_soc_31
     examples: |
       - vì sao mèo của tôi không thích âu yếm
+      - tại sao mèo của tui không thích được vuốt ve
 
   - intent: faq/cham_soc_32
     examples: |

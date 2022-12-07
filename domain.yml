@@ -87,8 +87,6 @@ responses:
         payload: "/xem_danh_muc"
       - title: "Xem danh sách nhãn hiệu"
         payload: "/xem_nhan_hieu"
-      # - title: "Tìm kiếm sản phẩm"
-      #   payload: "/tim_kiem_san_pham"
 
   utter_chon_danh_muc:
     - text: |
@@ -123,9 +121,7 @@ responses:
   utter_faq/cham_soc_2:
     - text: |
         Anh chị nên xem lại vấn đề ăn của bé. Cụ thể là đồ dùng ăn uống có vệ sinh sạch sẽ không? Cung cấp nước sạch, không dùng nước máy. 
-
         Anh chị xem thức ăn hạt cho mèo là loại gì, của hãng nào? Trước đó có dùng loại này không? Nếu là loại mới thì nên dừng lại. Còn nếu vẫn là loại cũ thì kiểm tra Hạn sử dụng hoặc bảo quản hạt.
-
         Mua men tiêu hóa Enterogermina cho mèo uống 1 ngày 2 ống (sau hoặc trước ăn) để cải thiện lại hệ tiêu hóa và đường ruột. Nếu mèo ăn được cháo thịt, thì nên chuyển cho ăn cháo loãng ít hôm. Nếu sau vài ngày ăn như vậy + uống men tiêu hóa mà đi phân bình thường trở lại tức là vấn đề của mèo đang gặp phải là ở Điều số 2 kể trên. Còn nếu vẫn tiếp tục tiêu chảy anh chị cần cho mèo đến thú y để test phân xem đang gặp phải vấn đề gì để có phác đồ điều trị sớm nhé! 
 
   utter_faq/cham_soc_3:
@@ -143,7 +139,6 @@ responses:
   utter_faq/cham_soc_6:
     - text: |
         Chào anh chị, bé cún của anh chị vừa trải qua 1 cú sốc lớn nên tâm lý ít nhiều cũng bị ảnh hưởng. Chưa kể thời gian mang thai bé đã rất mệt rồi, sau đó bị sảy thai thì khiến cho sức khỏe và tinh thần mệt mỏi hơn.
-        
         Điều cần làm bây giờ phải đảm bảo thai lưu trong bụng bé đã được lấy ra hết. Cho bé uống nước rau ngót ép để đào thải nhau thai ra ngoài. Ngoài ra, để cho bé có một không gian yên tĩnh, riêng tư. Khi nào bé có nhu cầu kết giao, gần gũi với chủ bé sẽ chủ động. Nếu bé thích ăn một món gì đó, anh chị hãy mua cho bé ăn hàng ngày để kết nối lại tình cảm và sự quan tâm dành cho bé.
 
   utter_faq/cham_soc_7:
@@ -165,7 +160,7 @@ responses:
         Chào anh chị, việc cún ngủ nhiều không phải là yếu tố thể hiện rằng sức khỏe của cún bất thường anh chị nhé. Ngược lại, việc cún ngủ nhiều là điều hết sức bình thường. Có thể bé đã trải qua nhiều sự cố về tâm lý dẫn đến cơ thể và tinh thần mỏi mệt nên việc ngủ sẽ giúp cún hồi lại thể trạng và tinh thần. Thông thường các bé đi lạc đều sẽ có cảm giác bị sốc và sợ hãi nên việc giật mình là chuyện không lạ. Những biểu hiện về cảm xúc này sẽ dần dần tự hết khi nhận được đầy đủ sự yêu thương và chăm sóc từ gia đình. anh chị yên tâm nhé!
 
   utter_faq/cham_soc_11:
-    - text: |  
+    - text: | 
         anh chị cần đưa bé đến cơ sở thú y có cung cấp dịch vụ siêu âm, chụp xquang để tiến hành kiểm tra thực tế. Dựa vào đó các bác sĩ sẽ đánh giá bệnh của bé và đề xuất phác đồ điều trị tốt nhất.
 
   utter_faq/cham_soc_12:
