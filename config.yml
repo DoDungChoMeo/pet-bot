@@ -22,9 +22,9 @@ pipeline:
     epochs: 100
     constrain_similarities: true
   - name: EntitySynonymMapper
-  - name: ResponseSelector
-    epochs: 100
-    constrain_similarities: true
+  # - name: ResponseSelector
+  #   epochs: 100
+  #   constrain_similarities: true
   - name: ResponseSelector
     epochs: 100
     retrieval_intent: faq

@@ -4,43 +4,20 @@ nlu:
   - intent: fb_greet
     examples: |
       - Có ai chat được bây giờ không?
+      - Có ai không?
       
   - intent: greet
     examples: |
       - hi
-      - hi shop
       - hello
-      - hello shop
       - alo
-      - alo shop
-      - chào shop
-      - chào cửa hàng
-      - chào bạn
-      - shop ơi
+      - chào
       - xin chào
-      - xin chào, có ai không
-      - giúp mình với
-      - tư vấn giúp mình với
-      - chào buổi sáng
-      - mình có vài câu hỏi
-      - bạn ơi cho mình hỏi với
-      - có ai giúp mình không
-      - có ai không
-      - có ai ở đây không?
-      - bạn ơi
-      - anh ơi
-      - chị ơi
-      - cháu ơi
 
   - intent: goodbye
     examples: |
       - tạm biệt
-      - chào tạm biệt
-      - tạm biệt bạn
-      - tạm biệt em
-      - tạm biệt em nhé
       - hẹn gặp lại
-      - hẹn gặp lại bạn
       - chúc một ngày tốt lành
       - bai bai
       - bye
@@ -60,20 +37,14 @@ nlu:
       - giới thiệu sản phẩm
       - các sản phẩm đang được bày bán của shop
       - tui muốn được tư vấn về các sản phẩm đang được bày bán của shop
-      - tôi muốn được tư vấn về các sản phẩm đang được bày bán của shop
-      - mình muốn được tư vấn về các sản phẩm đang được bày bán của shop
 
   - intent: xem_danh_muc
     examples: |
       - xem danh mục
-      - danh mục sản phẩm
-      - xem danh mục sản phẩm
       - xem các loại sản phẩm
       - có bao nhiêu loại sản phẩm
       - shop có các danh mục sản phẩm nào
-      - cho mình xem danh mục các sản phẩm đang được bày bán
       - cho tôi xem danh mục các sản phẩm đang được bày bán
-      - cho tui xem danh mục các sản phẩm đang được bày bán
 
   - intent: chon_danh_muc
     examples: |
@@ -105,14 +76,9 @@ nlu:
       - xem nhãn hiệu 
       - xem thương hiệu
       - xem danh sách thương hiệu
-      - xem  danh sách nhãn hàng
-      - shop có các nhãn hàng nào
-      - shop có các nhãn hiệu nào
       - shop có các thương hiệu nào
-      - cho tui xem các nhãn hàng
       - cho tui xem các nhãn hiệu
       - cho mình xem danh sách nhãn hàng
-      - cho mình xem danh sách nhãn hiệu
 
   - intent: chon_nhan_hieu
     examples: |
@@ -140,9 +106,12 @@ nlu:
     examples: |
       - bạn tên gì
       - tên của bạn là gì
+
   - intent: faq/ask_creator
     examples: |
       - ai đã tạo ra bạn
+      - ai là cha đẻ của bạn
+
   - intent: faq/ask_age
     examples: |
       - bạn bao nhiêu tuổi
@@ -156,32 +125,38 @@ nlu:
 
   - intent: faq/cham_soc_2
     examples: |
-      - mèo bị tiêu chảy phải làm sao
+      - mèo bị tiêu chảy
+      - mèo nhà mình bị tiêu chảy phải làm sao
 
   - intent: faq/cham_soc_3
     examples: |
-      - quên mang sổ tiêm phải làm sao
+      - quên mang sổ tiêm
+      - mình quên mang sổ tiêm
 
   - intent: faq/cham_soc_4
     examples: |
-      - chó ăn chuông lắc trên vòng đeo cổ phải làm sao
+      - chó ăn chuông lắc trên vòng đeo cổ
+      - cún nuốt phải chuông đeo cổ
 
   - intent: faq/cham_soc_5
     examples: |
-      - chó bị sái quai hàm phải làm sao
+      - chó bị sái quai hàm
+      - cún nhà mình bị sái quai hàm 
 
   - intent: faq/cham_soc_6
     examples: |
       - chó nhà em bị sảy thai
+      - cún bị sảy thai phải làm sao
 
   - intent: faq/cham_soc_7
     examples: |
       - chó bị tê liệt cột sống
+      - chó nhà em bị tê liệt cột sống giờ phải làm sao
 
   - intent: faq/cham_soc_8
     examples: |
-      - cún mắt mở không lên
       - chó mắt mở không lên
+      - mắt của cún nhà em mở không lên
 
   - intent: faq/cham_soc_9
     examples: |
@@ -196,6 +171,7 @@ nlu:
   - intent: faq/cham_soc_11
     examples: |
       - Chó nhà em bị sưng phù rất to ở cổ
+      - Ở vùng cổ chó nhà em bị rất to, bây giờ phải làm sao ạ
 
   - intent: faq/cham_soc_12
     examples: |
@@ -236,10 +212,10 @@ nlu:
     examples: |
       - chó của em mỗi khi tắm bé trở nên rất dữ,
 
-
   - intent: faq/cham_soc_23
     examples: |
       - chó nhà em  thỉnh thoảng cứ hay bị nôn, nôn ra cả thức ăn. Thỉnh thoảng bọt trắng, bọt vàng.
+      - bị ói
 
   - intent: faq/cham_soc_24
     examples: |
@@ -252,6 +228,7 @@ nlu:
   - intent: faq/cham_soc_27
     examples: |
       - Pet Friends có bán vật nuôi không ạ
+      - có bán thú cưng không shop ơi
 
   - intent: faq/cham_soc_28
     examples: |

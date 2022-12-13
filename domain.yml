@@ -3,10 +3,6 @@ version: '3.1'
 intents:
   - fb_greet
   - greet
-  - goodbye
-  - affirm
-  - deny
-  - bot_challenge
   - tu_van_san_pham
   - tu_van_cham_soc
   - xem_danh_muc
@@ -14,6 +10,10 @@ intents:
   - tim_kiem_san_pham
   - chon_danh_muc
   - chon_nhan_hieu
+  - goodbye
+  - affirm
+  - deny
+  - bot_challenge
   
 actions:
   - action_categories
@@ -88,6 +88,7 @@ responses:
       - title: "Xem danh sách nhãn hiệu"
         payload: "/xem_nhan_hieu"
 
+
   utter_chon_danh_muc:
     - text: |
         Quý đã chọn danh mục: {category}
@@ -98,17 +99,20 @@ responses:
 
   utter_tu_van_cham_soc:
     - text: |
-        Chào quý khách, quý khách có thể đặt các câu hỏi liên quan đến chó mèo ví dụ như: 
-        - Chó ăn chuông lắc trên vòng đeo cổ phải làm sao?
+        Chào quý khách, quý khách có thể đặt các câu hỏi liên quan đến chó mèo ví dụ như:         
         - Nên cho mèo đi tiêm phòng bao lâu một lần?
         - Triệt sản mèo có khiến chúng tăng cân?
+        - Chó ăn chuông lắc trên vòng đeo cổ phải làm sao?
+        Pet Friends sẽ giải đáp thắc mắc cho quý khách nếu có thể.
 
   utter_faq/ask_name:
     - text: |
         Tôi tên là Petbot
+
   utter_faq/ask_creator:
     - text: |
         Tôi được tạo ra bởi một lập trình viên tên là Tommy Tran
+
   utter_faq/ask_age:
    - text: |
         Tôi không nhớ chính xác mình bao nhiêu tuổi
@@ -116,7 +120,7 @@ responses:
 # Các câu trả lời tương ứng với các câu hỏi
   utter_faq/cham_soc_1:
     - text: |
-        anh chị nên cho bé đi tiêm phòng đầy đủ và định kỳ 1 năm 1 lần nhé        
+        anh chị nên cho bé đi tiêm phòng đầy đủ và định kỳ 1 năm 1 lần nhé
 
   utter_faq/cham_soc_2:
     - text: |
@@ -213,7 +217,7 @@ responses:
 
   utter_faq/cham_soc_27:
     - text: | 
-        Chào anh chị, hiện tại Pet Friends chỉ bán các đồ dùng, thức ăn cho chó mèo. Ngoài ra cung cấp các dịch vụ chăm sóc, cắt tỉa lông, trông giữ chứ không bán vật nuôi sống. Cảm ơn anh chị!
+        Chào anh chị, hiện tại Pet Friends chỉ bán các đồ dùng, thức ăn cho chó mèo.
  
   utter_faq/cham_soc_28:
     - text: |  
@@ -241,7 +245,7 @@ responses:
 
   utter_faq/cham_soc_34:
     - text: |
-        Chào anh chị, anh chị có thể ra hiệu thuốc mua nước nhỏ mắt muối sinh lý cho trẻ em để nhỏ cho bé. Tuy nhiên, nếu mắt bé có mủ và sưng đỏ khả năng là viêm mắt rồi chứ không phải dị ứng thông thường. anh chị có thể qua Pet Mart mua thuốc trị đau mắt cho bé và nhỏ sớm càng tốt để điều trị triệt để.
+        Chào anh chị, anh chị có thể ra hiệu thuốc mua nước nhỏ mắt muối sinh lý cho trẻ em để nhỏ cho bé. Tuy nhiên, nếu mắt bé có mủ và sưng đỏ khả năng là viêm mắt rồi chứ không phải dị ứng thông thường. anh chị có thể qua Pet Friends mua thuốc trị đau mắt cho bé và nhỏ sớm càng tốt để điều trị triệt để.
 
 session_config:
   session_expiration_time: 60
