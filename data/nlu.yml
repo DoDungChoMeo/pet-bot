@@ -37,6 +37,7 @@ nlu:
       - giới thiệu sản phẩm
       - các sản phẩm đang được bày bán của shop
       - tui muốn được tư vấn về các sản phẩm đang được bày bán của shop
+      - em muốn được biết thêm về các sản phẩm đang được bày bán của Pet Friends
 
   - intent: xem_danh_muc
     examples: |
@@ -45,6 +46,17 @@ nlu:
       - có bao nhiêu loại sản phẩm
       - shop có các danh mục sản phẩm nào
       - cho tôi xem danh mục các sản phẩm đang được bày bán
+
+  - intent: xem_nhan_hieu
+    examples: |
+      - danh sách nhãn hiệu
+      - xem nhãn hàng
+      - xem nhãn hiệu 
+      - xem thương hiệu
+      - xem danh sách thương hiệu
+      - shop có các thương hiệu nào
+      - cho tui xem các nhãn hiệu
+      - cho mình xem danh sách nhãn hàng
 
   - intent: chon_danh_muc
     examples: |
@@ -69,16 +81,6 @@ nlu:
       - danh mục [dinh dưỡng cho mèo](category)
       - danh mục [dinh duong cho meo]{"entity": "category", "value": "dinh dưỡng cho mèo"}
 
-  - intent: xem_nhan_hieu
-    examples: |
-      - danh sách nhãn hiệu
-      - xem nhãn hàng
-      - xem nhãn hiệu 
-      - xem thương hiệu
-      - xem danh sách thương hiệu
-      - shop có các thương hiệu nào
-      - cho tui xem các nhãn hiệu
-      - cho mình xem danh sách nhãn hàng
 
   - intent: chon_nhan_hieu
     examples: |

@@ -81,7 +81,8 @@ responses:
 
 # Kịch bản chính cho chatbot bán đồ dùng cho thú cưng
   utter_tu_van_san_pham:
-    - text: "Hiện tại Pet Friends đang kinh doanh các mặt hàng về thức ăn, quần áo, đồ dùng sinh hoạt và chăm sóc cho chó và mèo."
+    - text: |
+        Hiện tại Pet Friends đang kinh doanh các mặt hàng về thức ăn, quần áo, đồ dùng sinh hoạt và chăm sóc cho chó và mèo.      
       buttons:
       - title: "Xem danh mục sản phẩm"
         payload: "/xem_danh_muc"

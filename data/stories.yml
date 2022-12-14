@@ -6,12 +6,12 @@ stories:
       - intent: greet
       - action: utter_greet
 
-  # - story: Tư vấn sản phẩm
-  #   steps:
-  #     - intent: greet
-  #     - action: utter_greet
-  #     - intent: tu_van_san_pham
-  #     - action: utter_tu_van_san_pham
+  - story: Tư vấn sản phẩm theo danh mục sản phẩm
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: tu_van_san_pham
+      - action: utter_tu_van_san_pham
 
   - story: Tư vấn sản phẩm theo danh mục sản phẩm
     steps:
@@ -21,6 +21,8 @@ stories:
       - action: utter_tu_van_san_pham
       - intent: xem_danh_muc
       - action: action_categories
+      - intent: chon_danh_muc
+      - action: action_get_products_from_category
 
   - story: Tư vấn sản phẩm theo nhãn hiệu sản phẩm
     steps:
@@ -30,11 +32,13 @@ stories:
       - action: utter_tu_van_san_pham
       - intent: xem_nhan_hieu
       - action: action_brands
+      - intent: chon_nhan_hieu
+      - action: action_get_products_from_brand
 
   - story: Tư vấn chăm sóc thú cưng
     steps:
       - intent: greet
       - action: utter_greet
-      - intent: tu_van_cham_soc
+      - intent:   
       - action: utter_tu_van_cham_soc
       
